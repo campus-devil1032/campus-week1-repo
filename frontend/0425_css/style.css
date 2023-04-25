@@ -1,0 +1,31 @@
+/* 후손 선택자 */
+body p {
+    color: violet;
+    background-color: antiquewhite;
+}
+
+/* 인접 형제 선택자 */
+h1 + p {
+    font-size: 5px;
+}
+
+/* 자식 선택자 */
+section > p {
+    color: red;
+}
+
+/* 요소 선택자 */
+.bigtitle {
+    font-size: 30px;
+    color: brown;
+}
+
+/* 클래스 선택자 */
+.intro {
+    background-color: greenyellow;
+}
+
+/* ID 선택자 */
+#intro-for-id {
+    background-color: cadetblue;
+}

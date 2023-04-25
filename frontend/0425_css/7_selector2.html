@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* 요소 선택자 */
+      h1 {
+        font-size: 36px;
+      }
+
+      /* 클래스 선택자 */
+      .highlight {
+        color: red;
+        font-weight: bold;
+      }
+
+      /* ID 선택자 */
+      #main {
+        background-color: lightgray;
+      }
+
+      /* 자식 선택자 */
+      ul > li {
+        list-style: none;
+        margin-bottom: 10px;
+      }
+
+      /* 인접 형제 선택자 */
+      h2 + p {
+        font-style: italic;
+      }
+
+      /* 일반 형제 선택자 */
+      h2 ~ p {
+        font-size: 20px;
+      }
+
+      /* 속성 값 선택자 */
+      [href='https://www.example.com'] {
+        color: blue;
+      }
+
+      /* 시작 부분 일치 선택자 */
+      [class^='intro'] {
+        text-align: center;
+      }
+
+      /* 종료 부분 일치 선택자 */
+      [class$='out'] {
+        background-color: pink;
+      }
+
+      /* 포함하는 부분 일치 선택자 */
+      [class*='list'] {
+        border: 1px solid black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Welcome to my website!</h1>
+      <p class="intro-paragraph">This website is about something important.</p>
+      <ul>
+        <li class="list-item">Item 1</li>
+        <li class="list-item">Item 2</li>
+        <li class="list-item">Item 3</li>
+      </ul>
+      <h2>More information</h2>
+      <p>This is some additional information.</p>
+      <p class="highlight">This text is highlighted.</p>
+      <p class="outro-paragraph">Thank you for visiting my website!</p>
+      <a href="https://www.example.com">Link to example.com</a>
+    </div>
+  </body>
+</html>

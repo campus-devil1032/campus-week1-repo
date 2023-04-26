@@ -1,0 +1,46 @@
+button {
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: yellow;
+}
+
+button:active {
+    background-color: green;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px blue;
+}
+
+.box::before {
+    content: "→";
+    color: red;
+}
+
+.box::after {
+    content: "<<";
+    color: red;
+}
+
+button:last-child::before {
+    content: "👉";
+    margin-right: 5px;
+}
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    color: red;
+}
+
+li:nth-child(2) {
+    background-color: blue;
+}

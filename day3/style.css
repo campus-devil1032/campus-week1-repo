@@ -1,12 +1,12 @@
 body {
-    border: 2px solid lightgray;
+    border: 1px solid lightgray;
     padding: 7px;
-    margin: 15px;
+    margin: 20px;
   }
 
 .logo {
     border: 1px solid lightgray;
-    padding: 9px;
+    padding: 7px;
     background-color: #f0f0f0;
     font-weight: bold;
     font-size: 20px;

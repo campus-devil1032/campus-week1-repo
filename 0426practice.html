@@ -6,16 +6,16 @@
   <style>
     /* 공통 스타일 */
     .box {
-      border: 1px solid #333;
+      border: 1px solid #575757;
       background-color: #f2f2f2;
-      margin: 15px;
+      margin: 5px;
       padding: 15px;
     }
 
     .box2 {
-      border: 1px solid #333;
+      border: 1px solid #575757;
       background-color: #fff;
-      margin: 15px;
+      margin: 5px;
       padding: 15px;
     }
 
@@ -23,22 +23,31 @@
     .logo {
       font-size: 24px;
       font-weight: bold;
-      color: #333;
+      color: #575757;
     }
 
-    .text {
-      font-size: 10px;
-      color: #333;
+    /* 본문 스타일 1 */
+    .text1 {
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 1.5;
+      color: #000000;
     }
 
-    /* 메뉴 스타일 지정 */
+    /* 본문 스타일 2 */
+    .text2 {
+      font-size: 15px;
+      color: #575757;
+      line-height: 1.5;
+    }
+
     .menu {
       display: flex;
       justify-content: flex-start;
     }
 
     .menu a {
-      color: #333;
+      color: #575757;
       text-decoration: none;
       margin-right: 0.5em;
       /* 메뉴 항목 사이 간격 조정 */
@@ -46,25 +55,28 @@
 
     /* 전체를 감싸는 테두리 스타일 지정 */
     .wrapper {
-      border: 1px solid #333;
+      border: 1px solid #575757;
       padding: 10px;
     }
 
     /* body에 여백 지정 */
     body {
-      margin: 8px;
+      margin: 30px;
+    }
+
+    .copylight {
+      font-size: 14px;
+      color: #575757;
+      text-align: center;
     }
   </style>
 </head>
 
 <body>
   <div class="wrapper">
-    <!-- 로고 -->
     <div class="box">
       <div class="logo">Logo</div>
     </div>
-
-    <!-- 메뉴 -->
     <div class="box">
       <div class="menu">
         <a href="#">Home</a>
@@ -75,12 +87,21 @@
 
     <!-- 텍스트 -->
     <div class="box2">
-      <div class="text">안녕하세요안녕하세요</div>
+      <div class="text1">Static Position Example</div>
+      <div class="text2">This is an example of a web page with static position.</div>
+      <img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/E172/production/_126241775_getty_cats.png"
+        style="display: block; margin: auto;">
+      <div class="text2">
+        가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,
+      </div>
+      <p> </p>
+      <div class="text2">가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,가나다라마바사아자차카타파하,,</div>
+
     </div>
 
-    <!-- 카파라이트 -->
-    <div class="copylight">
-      <div class="logo">Logo</div>
+    <!-- 카피라이트 -->
+    <div class="box">
+      <div class="copylight">Copylight ⓒ 2023</div>
     </div>
 
 

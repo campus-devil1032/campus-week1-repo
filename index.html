@@ -36,12 +36,14 @@
     fieldNameElement.style.margin = "5px 5px 5px"
     fieldNameElement.style.padding = "5px 5px 5px 15px";
     fieldNameElement.style.border = "thin solid #000";
-    fieldNameElement.style.backgroundColor = "#F0F0F0";
+    fieldNameElement.style.backgroundColor = "#F6F1E9";
 
     var secondNameElement = document.getElementById('secondContents');
     secondNameElement.textContent = "Home About Contact"
     secondNameElement.style.border = "thin solid #000";
     secondNameElement.style.margin = "5px 5px 5px"
+    secondNameElement.style.backgroundColor = "#F0F0F0";
+    secondNameElement.style.padding = "5px 5px 5px 15px";
 
     var mainContentsElement = document.getElementById('mainContents');
     mainContentsElement.style.border = "thin solid #000";
@@ -53,6 +55,7 @@
     <p>This is an example of a web page with static position<p>
     `;
     firstMain.innerHTML = staticText;
+    firstMain.style.padding = "50px 5px 50px 30px";
 
     
    var img = document.createElement("img");
@@ -60,6 +63,8 @@
    var src = document.getElementById('imgMain');
    src.appendChild(img);
    src.style.textAlign = "center";
+   img.height = 250;
+   img.width = 450;
    
    var multiLine = `
     <p>Gunfire and the roar of fighter jets was heard by CNN journalists in</p>
@@ -71,6 +76,7 @@
    var severallineMainElement = document.getElementById('severallineMain');
    severallineMainElement.innerHTML = multiLine;
    severallineMainElement.padding = "5px 5px 5px 15px";
+   severallineMainElement.style.padding = "50px 5px 50px 30px";
    
    var footContentsElement = document.getElementById('footContents');
     footContents.textContent = "Copyright @ 2023";
@@ -78,5 +84,6 @@
     footContents.style.border = "thin solid #000";
     footContents.style.margin = "5px 5px 5px"
     severallineMainElement.padding = "5px 5px 15px 15px";
+    footContentsElement.style.backgroundColor = "#F6F1E9";
        </script>
 </html>

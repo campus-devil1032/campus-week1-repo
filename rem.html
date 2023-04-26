@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rem 연습</title>
+    <style>
+        html {
+            font-size: 20px;
+            /* 기본 폰트 크기 */
+        }
+
+        .container {
+            font-size: 1.2rem;
+            /* 루트 요소 폰트 크기의 1.2배 */
+        }
+
+        .container h1 {
+            font-size: 2em;
+            /* 부모요소 폰트 크기 2배 */
+        }
+
+        .container p {
+            font-size: 1.5em;
+            /*부모 요소 폰트 크기 1.5배*/
+            margin-bottom: 1rem;
+            /* 루트 요소 폰크 크기 1배 */
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <h1>Em and Rem Example</h1>
+        <p>CSS에서 em과 rem 단위를 함께 사용하는 예입니다.</p>
+        <p>em 및 rem 단위를 사용해 글꼴 크기를 더 유연하게 만들고 상위 요소에 상대적으로 만들 수 있습니다.</p>
+    </div>
+</body>
+
+</html>

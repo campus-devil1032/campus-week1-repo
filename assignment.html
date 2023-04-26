@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Example</title>
+
+    <style>
+        h2 {
+            color : red;
+        }
+        div {
+            font-style: italic;
+        }
+        .crimson {
+            color : crimson;
+            font-style: italic;
+        }
+        .pizza{
+            font-style: italic;
+        }
+        .container{
+            background-color: rgb(240, 238, 238);
+        }
+        .helpgoogle{
+            font-style: italic;
+            width: 100%;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            white-space:nowrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selector Example</h1>
+    <h2>Lorem Ipsum</h2>
+    <h4 class="crimson">이 요소는 단락 요소 입니다. 글자의 색 이름은 'crimson'입니다. font-style은 이탤릭입니다.</h4>
+
+    <p>이 요소는 단락 요소입니다.1</p>
+    <p>이 요소는 단락 요소입니다.2</p>
+    <p>이 요소는 단락 요소입니다.3</p>
+    <ul>
+        <li>unordered list 입니다. ul -> li의 구조를 가집니다.1</li>
+        <li>unordered list 입니다. ul -> li의 구조를 가집니다.2</li>
+        <li>unordered list 입니다. ul -> li의 구조를 가집니다.3</li>
+    </ul>
+    <p class="pizza">이 요소는 단락 요소입니다.4</p>
+    <p class="pizza">이 요소는 단락 요소입니다.5</p>
+    <p class="pizza">이 요소는 단락 요소입니다.6</p>
+
+    <p class="container">Div container</p>
+    <p class="helpgoogle">단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100%를 적용해보세용</p>
+    <p class="helpgoogle">단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100%를 적용해보세용</p>
+    <p class="helpgoogle">단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100%를 적용해보세용</p>
+
+    <label for="text"></label>
+    <input type="text" name="text" placeholder="Enter text here..." 
+    onfocus="this.placeholder=''" 
+    onblur="this.placeholder='Enter text here...'"
+    style="background-color: aliceblue;">
+    <a href="#">Link example</a>
+</body>
+</html>

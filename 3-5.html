@@ -5,7 +5,7 @@
     <title>test1</title>
     <style>
         .sub-title {
-            color: red;
+            font-size: 30px;
         }
 
         .text-font-italic {
@@ -22,70 +22,77 @@
             font-style: italic;
         }
 
-        .crimoson-text-color {
-            color: crimson;
-            font-style: italic;
-            font-weight: bold;
-            font-size: 20px;
-        }
-
         .small {
             font-size: 12px;
         }
 
-        .div-container {
-            width: 1080px;
-            background-color: yellow;
-        }
 
         .main-box {
             /* 메인박스 */
             background-color: white;
-            padding-left: 2px;
-            size: 100px;
+            margin: 3%;
+            padding: 20px;
+            border: 0.5px solid black;
+        }
+
+        .main-box-logo {
+            background-color: salmon;
+            padding-left: 20px;
+            size: 0px;
+            border: 0.5px solid black;
+
+        }
+        .box{
+            padding-left: 20px;
+            margin-top: 20px;
+            border: 0.5px solid black;
+
+        }
+        .marginauto{
+            display: inline-block;
+            /*IE8에선 미적용 되기에 \9 추가 */
+            width: auto\9 !important;
+            width: auto !important;
+            /*마진 3%씩*/
+            max-width: 91%;
+            height: auto !important;;
+            text-align: center;
+            margin: auto;
+            display: block; margin: 0px auto;
         }
     </style>
 </head>
 
 <body style="background-color: gray;">
     <div class="main-box">
-        <div class="main-box">
+        
+        <!-- 제목 -->
+        <div class="main-box-logo">
             <h1>LOGO</h1>
         </div>
-        <div>
+
+        <!-- 소제목 -->
+        <div class="box">
             <h3>home&nbsp;About&nbsp;Contact </h3>
         </div>
-        <h2 class="sub-title">Lorem ipsum</h2>
-        <p class="crimoson-text-color">이 요소는 단락 요소 입니다. 글자의 색 이름은 'crimoson'입니다. font-style은 이탤릭 입니다.</p>
-        <div>
-            <p>이 요소는 단락 요소 입니다.1</p>
-            <p></p>
-            <p>이 요소는 단락 요소 입니다.2</p>
-            <p></p>
-            <p>이 요소는 단락 요소 입니다.3</p>
-        </div>
-        <ul class="small">
-            <li>unordered list입니다. ul-> li의 구조를 가집니다. 1</li>
-            <li>unordered list입니다. ul-> li의 구조를 가집니다. 2</li>
-            <li>unordered list입니다. ul-> li의 구조를 가집니다. 3</li>
-        </ul>
-        <div class="text-font-italic">
-            <p>이 요소는 단락 요소 입니다.4</p>
-            <p></p>
-            <p>이 요소는 단락 요소 입니다.5</p>
-            <p></p>
-            <p>이 요소는 단락 요소 입니다.6</p>
+
+        <!-- 본문박스, -->
+        <div class="box">
+            <h3 class="sub-title">Lorem ipsum</h3>
+            <p style="margin-top: 20px;">멀티캠퍼스!!</p>
+            
+            <div>
+                <img class="marginauto" src="https://img.kr.news.samsung.com/kr/wp-content/uploads/2017/07/170621_%EC%84%B8%EC%83%81%EC%9D%84%EC%9E%87IT%EB%8A%94%EC%9D%B4%EC%95%BC%EA%B8%B0_%EC%BD%94%EB%94%A9%EC%9D%98%EB%B3%B8%EC%A7%88%EA%B3%BC%EB%AF%B8%EB%9E%98%EC%9D%B4%EB%AF%B8%EC%A7%8009.jpg" alt="No image">
+            </div>
+
+            <p>개발기간 2023/04/26</p>
         </div>
 
-        <div class="div-container">
-            Div container
+        <!-- 불펌금지 -->
+        <div class="box">
+            <h4 style="text-align: center;">Copyright...</h4>            
         </div>
-        <div class="box1">
-            <p></p>
-            <p></p>
-            <p></p>
-
-        </div>
+        
     </div>
     <input placeholder="Enter text here...">
     <a href="">Link to example.com</a>

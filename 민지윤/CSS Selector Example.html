@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Selector Example</title>
+    <style>
+        #red {
+            color: red;
+        }
+
+        .text_overflow {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            word-break: break-all;
+        }
+
+        #input {
+            width: 150px;
+            background-color: rgb(211, 234, 243);
+        }
+    </style>
+</head>
+
+
+<body>
+    <h1> CSS Selector Example </h1>
+
+    <div id="red">
+        <h2> Lorem Ipsum </h2>
+    </div>
+
+    <p style=color:crimson><b><i> 이 요소는 단락 요소입니다. 글자의 색 이름은 'crimson'입니다. font-style은 이탤릭입니다.</i></b></p>
+    <p> 이 요소는 단락 요소입니다.1 </p>
+    <p> 이 요소는 단락 요소입니다.2 </p>
+    <p> 이 요소는 단락 요소입니다.3 </p>
+
+    <ul>
+        <li>unordered list입니다. ul -> li의 구조를 가집니다.1</li>
+        <li>unordered list입니다. ul -> li의 구조를 가집니다.2</li>
+        <li>unordered list입니다. ul -> li의 구조를 가집니다.3</li>
+    </ul>
+
+    <p> 이 요소는 단락 요소입니다.4</p>
+    <p> 이 요소는 단락 요소입니다.5</p>
+    <p> 이 요소는 단락 요소입니다.6</p>
+
+    <div style=background-color:lightgray>
+        <p> Div container</p>
+    </div>
+
+    <div class="text_overflow"> 단락요소입니다. 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 </div>
+    <div class="text_overflow"> 단락요소입니다. 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 </div>
+    <div class="text_overflow"> 단락요소입니다. 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 블라 </div>
+
+    <form>
+        <input type="text" id="input" placeholder="Enter text here">
+    </form>
+
+    <a href="https://julie-mingu.tistory.com/">Link example</a>
+
+
+</body>
+
+</html>

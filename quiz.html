@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <style>
+        h1 {
+            font-size: 32px;
+        }
+
+        h2 {
+            color: red;
+            font-size: 20px;
+        }
+
+        h2+p {
+            color: crimson;
+            font-style: italic;
+        }
+
+        ul {
+            font-size: 12px;
+        }
+
+        ul~p {
+            font-style: italic;
+        }
+
+        .container {
+            background-color: lightgray;
+        }
+
+        .outro {
+            font-style: italic;
+            display: block;
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        input {
+        width: 150px;
+        border: 2px solid #000000;
+        font-size: 8px;
+        background-color: aliceblue;
+        }
+
+        .foot {
+            font-size: 12px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>CSS Selector Example</h1>
+    <h2>Lorem lpsum</h2>
+    <p>이 요소는 단락 요소입니다. 글자의 색 이름은 'crimson'입니다. font-style은 이탤릭입니다.</p>
+    <p>이 요소는 단락 요소 입니다.1</p>
+    <p>이 요소는 단락 요소 입니다.2</p>
+    <p>이 요소는 단락 요소 입니다.3</p>
+    <ul>
+        <li> unordered list 입니다. ul -> li의 구조를 가집니다. 1</li>
+        <li> unordered list 입니다. ul -> li의 구조를 가집니다. 2</li>
+        <li> unordered list 입니다. ul -> li의 구조를 가집니다. 3</li>
+    </ul>
+
+    <p>이 요소는 단락 요소 입니다.4</p>
+    <p>이 요소는 단락 요소 입니다.5</p>
+    <p>이 요소는 단락 요소 입니다.6</p>
+
+    <div class="container">
+        <p>Div container</p>
+    </div>
+
+    <div class="outro">
+        <p>단락요소입니다. 구글에 "css 텍스트 ...처리"를 검색해서 적용해보세요 width=100%를 적용해보세요!</p>
+        <p>단락요소입니다. 구글에 "css 텍스트 ...처리"를 검색해서 적용해보세요 width=100%를 적용해보세요!</p>
+        <p>단락요소입니다. 구글에 "css 텍스트 ...처리"를 검색해서 적용해보세요 width=100%를 적용해보세요!</p>
+    </div>
+
+    <div class="foot">
+        <p><input type="text" placeholder="Enter text here...">
+            <a href="#">Link example</a>
+        </p>
+    </div>
+    
+</body>
+
+</html>

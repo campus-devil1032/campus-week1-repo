@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>이미지 갤러리 탭 제목</title>
+    <style>
+        /*justify-content 가운데 위치 (양쪽 패딩)*/
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: contain;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>이미지 갤러리</h1>
+    <div class="gallery">
+        <img src="https://via.placeholder.com/300x200" alt="이미지 1">
+        <img src="https://via.placeholder.com/300x200" alt="이미지 2">
+        <img src="https://via.placeholder.com/300x200" alt="이미지 3">
+        <img src="https://via.placeholder.com/300x200" alt="이미지 4">
+        <img src="https://via.placeholder.com/300x200" alt="이미지 5">
+        <!-- alt -> null, 로딩중일때 나오는 텍스트-->
+    </div>
+</body>
+
+</html>

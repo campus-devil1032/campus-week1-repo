@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Floating Layout Example</title>
+    <style>
+      header {
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
+
+      nav {
+        float: left;
+        width: 30%;
+        background-color: #f2f2f2;
+        height: 300px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      .content {
+        float: right;
+        width: 70%;
+        height: 300px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      footer {
+        clear: both;
+        background-color: #333;
+        color: white;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Website</h1>
+    </header>
+
+    <nav>
+      <h2>Navigation</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <h2>Content</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor nisl eu velit commodo, non bibendum mi rhoncus. Nulla non sapien vel lorem ullamcorper consectetur. Nullam facilisis quam vitae dapibus pellentesque. Fusce laoreet odio libero, id congue justo pharetra in. Mauris sit amet venenatis velit. Pellentesque eu magna vitae nisl aliquet vehicula nec vel ex. Etiam at elit sed mauris tempor pharetra sed quis quam.</p>
+    </div>
+
+    <footer>
+      <p>Copyright © My Website</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Relative Position Example</title>
+	<style>
+		.container {
+			position: relative;
+			margin: 20px;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		.header {
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 10px;
+			position: relative;
+			left: 50px;
+			top: 50px;
+		}
+		.nav {
+			background-color: #f8f8f8;
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 10px;
+			position: relative;
+			left: 100px;
+			top: 100px;
+		}
+		.content {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			padding: 20px;
+			margin-bottom: 10px;
+			position: relative;
+			left: 150px;
+			top: 150px;
+		}
+		.footer {
+			background-color: #f0f0f0;
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-top: 10px;
+			position: relative;
+			left: 200px;
+			top: 200px;
+		}
+		.logo {
+			font-size: 24px;
+			font-weight: bold;
+		}
+		.nav-link {
+			display: inline-block;
+			padding: 5px;
+			margin-right: 10px;
+			color: #333;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		.heading {
+			font-size: 32px;
+			font-weight: bold;
+			margin-bottom: 20px;
+		}
+		.paragraph {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 10px;
+		}
+		.image {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+		}
+		.footer-text {
+			text-align: center;
+			font-size: 14px;
+			color: #666;
+			margin: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="logo">Logo</div>
+		</div>
+		<div class="nav">
+			<a href="#" class="nav-link">Home</a>
+			<a href="#" class="nav-link">About</a>
+			<a href="#" class="nav-link">Contact</a>
+		</div>
+		<div class="content">
+			<h1 class="heading">Relative Position Example</h1>
+			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at neque eu ipsum consequat varius non in elit. Ut sem risus, eleifend ac fermentum a, pharetra at metus. Sed gravida, est vel bibendum dictum, dolor justo aliquam massa, eget tincidunt metus nisi eu libero.</p>
+			<img src="https://picsum.photos/600/400" alt="Random Image" class="image">
+			<p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at neque eu ipsum consequat varius non in elit. Ut sem risus, eleifend ac fermentum a, pharetra at metus. Sed gravida, est vel bibendum dictum, dolor justo aliquam massa, eget tincidunt metus nisi eu libero. Aliquam id metus vitae eros bibendum volutpat. Pellentesque condimentum dui at efficitur imperdiet. Nam ac quam eget lacus tristique faucibus a eget nibh. Nulla facilisi. In hac habitasse platea dictumst. Suspendisse a tellus et turpis posuere ornare eu nec dolor. Ut in augue purus.</p>
+			<p class="paragraph">Donec vitae feugiat turpis. Sed vulputate velit quis dapibus auctor. Aenean quis sollicitudin est. Fusce quis ipsum eget mauris gravida pharetra. Pellentesque sagittis ligula vitae turpis molestie bibendum. Sed vulputate ipsum nec odio malesuada, ac ullamcorper velit semper. Suspendisse tincidunt, dolor id maximus vulputate, velit mi varius dolor, id tristique enim lorem vel dolor. Aenean et tincidunt diam.</p>
+			<p class="paragraph">Etiam vel sodales elit. Morbi id lorem a neque congue laoreet. Sed vel ex dolor. Morbi tincidunt ligula non ex iaculis, sit amet fringilla lacus dapibus. Sed lobortis interdum erat, vitae pharetra dolor volutpat vel. Integer sit amet fringilla odio. Proin ut tellus tortor. Sed vel felis ac nisl congue pulvinar a id ante. Pellentesque euismod est at est gravida, a interdum lectus bibendum.</p>
+		</div>
+		<div class="footer">
+			<p class="footer-text">Copyright © 2023</p>
+		</div>
+	</div>
+</body>
+</html>

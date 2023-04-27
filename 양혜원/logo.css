@@ -1,0 +1,50 @@
+.body, .body-head,.body-menu, .body-main, .body-foot{
+    margin:auto;
+    margin: 2%;
+    border: 1px solid lightgray;
+}
+
+.body{
+    margin:auto;
+    width:1000px;
+    height:820px;
+}
+.body-head{
+    background-color: rgb(243, 242, 242);
+    padding:1%;
+    padding-left: 2%;
+    height:50px;
+}
+
+.body-head h1{
+    margin:0;
+}
+
+
+.body-menu{
+    height:50px;
+    padding:1%;
+}
+
+.body-menu-home a, .body-menu-about a, .body-menu-contact a{
+    font-weight: 700;
+    color:rgb(71, 71, 71);
+    padding-left:1%;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+
+.body-main{
+    padding:3%;
+}
+
+.body-main-img{
+   text-align: center;
+}
+
+.body-foot{
+    background-color:rgb(241, 241, 241);
+    text-align: center;
+    padding: 1%;
+}

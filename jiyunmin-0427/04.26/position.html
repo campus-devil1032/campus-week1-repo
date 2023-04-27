@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>절대위치 예제</title>
+	<style>
+		.container {
+			position: relative;
+			height: 400px;
+			border: 1px solid black;
+			margin: 20px;
+		}
+
+		.box {
+			background-color: lightblue;
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+			padding: 20px;
+			position: absolute;
+			top: 50px;
+			left: 50px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<p>절대위치를 사용한 박스 예제입니다.</p>
+		<div class="box">
+			<p>이것은 절대위치를 사용한 박스입니다.</p>
+			<p>절대위치는 요소를 문서 흐름에서 제거하고, 가장 가까운 상위 요소를 기준으로 배치합니다.</p>
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- 
+위 코드에서 container 클래스를 가진 요소에는 position: relative 속성이 지정되어 있습니다. 이것은 box 클래스를 가진 요소의 위치를 기준으로 삼기 위해 필요합니다.
+
+내부에 있는 box 클래스를 가진 요소에는 position: absolute 속성이 지정되어 있습니다. 이것은 box 요소를 문서 흐름에서 제거하고, container 요소를 기준으로 배치하기 위해 필요합니다.
+
+top: 50px 및 left: 50px 속성은 box 요소를 container 요소의 왼쪽 상단 모서리에서 50픽셀 아래쪽과 오른쪽으로 이동시키는 역할을 합니다.
+
+즉, position: absolute를 사용하여 요소를 배치하면 다른 요소에 영향을 받지 않고, 문서 흐름에서 제거된 상태로 원하는 위치에 배치할 수 있습니다. 
+-->

@@ -1,0 +1,32 @@
+//삼각형
+for(let i=0; i<4; i++){
+	for(let j=0; j<3-i; j++){
+		console.log('br'); 
+	}
+	for(let j=0;j<2*i+1;j++){
+		console.log('*'); 
+	}
+	console.log('br');
+} 
+
+//사각형
+for (let i = 0; i < 5; i++) {
+    console.log('*****');
+}
+
+
+//점점 늘어나는 옆 삼각형
+for (let i = 1; i < 5; i++) {
+    for (let j = i; j > 0; j--) {
+        console.log('*');
+    }
+    console.log('br');
+}
+
+//점점 줄어드는 옆 삼각형
+for (let i = 3; i > 0; i--) {
+    for (let j = b; j > 0; j--) {
+        console.log('*');
+    }
+    console.log('<br>');
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4일차과제_04</title>
+</head>
+<body>
+    <script>
+        function Rhombus() {
+            let num = 1;
+            let num2 = 3;
+            for (i = 0; i < 11; i++)
+            {
+                if (i < 6){
+                console.log(" ".repeat(11-i) + "*".repeat(i+num));
+                num += 1;
+                }
+                if (i >= 6){
+                    console.log(" ".repeat(i+1) + "*".repeat(i+num2))
+                    num2 -= 3
+                }
+            }
+        }
+
+        
+        Rhombus();
+    </script>
+</body>
+</html>

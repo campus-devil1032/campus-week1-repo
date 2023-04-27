@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4일차과제_별</title>
+</head>
+<body>
+    <script>
+        function Triangle() {
+            let height = 8;
+            let width = 15;
+
+            for (let i = 0; i < height; i++)
+            {   
+                let gap = ''; //초기화 
+                let row = '';  
+                
+                for (let j = height ; j + (width -1) >= i; j--) {
+                    gap += ' ';
+                }
+
+                for (let j = 0 ; j <= 2*i; j++){
+                    row += '*';
+                }
+
+                console.log(gap + row); 
+                
+            }
+        }
+         function Trapezoid() {
+            let height = 8;
+            let width = 45; //역삼각형 세개 붙인 길이 
+            
+
+            for (let i = 0; i < height; i++){
+                let row = '';
+                let gap = '';
+                for (let j = 0; j <= i; j++){
+                    gap += ' ';
+                }
+                for(let j = 0; j < width ; j++){
+                    row += '*';
+                    if(width < 29)
+                      break;
+                }
+                width -= 2;
+                console.log(gap+row);
+            }
+        }
+       
+        function TwoTriangle () {
+            let height = 8;
+            let width = 14; //두 개의 삼각형 중 1개의 삼각형의 처음 밑변
+           for (let i = 0; i < height; i++){
+             let row1 = '';
+             let gap1 = '';
+             let row2 = '';
+             let gap2 = '';
+            
+             
+             for(let j = height ; j > i; j--){
+                gap1 += ' ' ;
+             }
+             
+             
+             for(let j = 0; j <= width ; j++){
+                row1 += '*';
+                if (width < 1)
+                break;
+             }
+            
+             for(let j = 0 ; j <= 3*(2*i) ; j++){
+                gap2 += ' ';
+             }
+
+             for(let j = 0; j <= width ; j++){
+                row2 += '*';
+                if (width < 1)
+                break;
+             }
+             
+             
+
+             width -= 2;
+             console.log(gap1 + row1 + gap2 + row2);
+           }
+
+
+        }
+         
+
+        Triangle();
+        Trapezoid();
+        TwoTriangle();
+    </script>
+</body>
+</html>

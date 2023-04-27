@@ -122,19 +122,19 @@
                         for (let l = 0; spa2 > l; l++) { dot = dot + " "; }
                         console.log(dot);
                     }
-                    
+
                     if (i >= halfline) {
-                        spa = -halfline + i ;
+                        spa = -halfline + i;
                         sp2 = spa;
                         for (let k = 0; spa > k; k++) { dot = dot + " "; }
                         dot = dot + "*";
 
-                        for (let j = line-1; i < j; j--) { dot = dot + "**"; }
+                        for (let j = line - 1; i < j; j--) { dot = dot + "**"; }
 
                         for (let l = 0; spa2 > l; l++) { dot = dot + " "; }
                         console.log(dot);
                     }
-                            
+
                 }
 
             }
@@ -143,7 +143,86 @@
         /*다이아*/
         dot6(10);
 
+
+        function dot7(line) {
+            let spa = 0;
+            let spa2 = 0;
+            let top = line * 0.3;
+            let middle = line * 0.4;
+            let bottom = line * 0.3;
+            let linechecker = 0;
+            let dotcounter = 0;
+            if (line > 0) {
+                for (let i = 0; top > i; i++) {
+                    let dot = "";
+                    let spa = line - i - 1;
+                    let spa2 = spa
+                    linechecker = linechecker +1;
+                    for (let k = 0; spa > k; k++) { dot = dot + " "; }
+                    dot = dot + "*";
+                    if (i != 0) {
+                        for (let j = 0; i > j; j++) { dot = dot + "**"; }
+                    }
+                    for (let l = 0; spa2 > l; l++) { dot = dot + " "; }
+                    console.log(dot);
+                }
+                for (let i = line; i > (line-middle); i--) {
+                    let dot = "";
+                    let spa = line - i - 1;
+                    let spa2 = spa
+                    linechecker=linechecker+1
+                    for (let k = 0; spa > k; k++) { dot = dot + " "; }
+                    dot = dot + "*";
+                    if (i != 1) {
+                        for (let j = 0; i > j; j++) { dot = dot + "**"; }
+                    }
+                    for (let l = 0; spa2 > l; l++) { dot = dot + " "; }
+                    console.log(dot);
+                }
+                for (let i = 0; bottom > i; i++) {
+                    let dot = "";
+                    let spa = line - i - 1;
+                    let spa2 = spa;
+                    let spa3 = spa/2;
+                    let spa4 = spa/2;
+                    let tap1 =(line*2-2-(i*2+1))/2*(i+1)/bottom;
+                    let tap2=(line*2-2-(i*2+1))/2*(bottom-i-1)/bottom;
+                    let tap3=i*2+1;
+                    let tap4=(line*2-2-(i*2+1))/2*(bottom-i-1)/bottom;;
+                    let tap5=(line*2-2-(i*2+1))/2*(i+1)/bottom;
+                    linechecker = linechecker+1
+                    if(tap2==0){tap2=1; tap4=1; tap1=tap1-1; tap5=tap5-1}
+                    for (let k = 0; tap1 > k; k++) { dot = dot + " ";dotcounter =dotcounter +1; }
+                    for (let k = 0; tap2 > k; k++) { dot = dot + "*";dotcounter =dotcounter +1; }
+                    for (let k = 0; tap3 > k; k++) { dot = dot + " ";dotcounter =dotcounter +1; }
+                    for (let k = 0; tap4 > k; k++) { dot = dot + "*";dotcounter =dotcounter +1; }
+                    for (let k = 0; tap5 > k; k++) { dot = dot + " ";dotcounter =dotcounter +1; }
+
+                    /*가운데 공백갯수는 i*2+1 */
+                    /*전체갯수는 line*2-2 */
+                    /*
+                    for (let k = 0; spa3 > k; k++) { dot = dot + " ";dotcounter =dotcounter +1; }
+                    for (let k = 0.9; spa4 > k; k++) { dot = dot + "*"; dotcounter =dotcounter +1;}
+                    dot = dot + " ";
+                    if (i != 0) {
+                        for (let j = 0; i > j; j++) { dot = dot + "  ";dotcounter =dotcounter +2; }
+                    }
+                    for (let l = 0.9; spa4 > l; l++) { dot = dot + "*"; dotcounter =dotcounter +1;}
+                    for (let l = 0; spa3 > l; l++) { dot = dot + " "; dotcounter =dotcounter +1;}
+                    */
+                    console.log(dot);
+                    
+                }
+                console.log(linechecker);
+                console.log(dotcounter);
+                
+               
+            }
+        }
+
         /*별*/
+        dot7(10);
+
     </script>
     <p>check console</p>
 </body>

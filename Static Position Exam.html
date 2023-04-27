@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스태틱 포지션 예제</title>
+    <style>
+        .wrapper{
+            margin: 5px, 5px, 0px, 10px;
+            width: 95%;
+            height: 95%;
+            border: 1px solid lightgray;
+        }
+
+        .wrapper div{
+            margin: 5px 5px 10px 10px;
+            border: 1px solid #ced4da;
+        }
+
+        .wrapper span {
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .wrapper .logo{
+            vertical-align: middle;
+            height: 40px;
+            background-color: #f1f3f5;
+            font-size: 20px;
+            font-weight: bold; 
+            line-height: 30px;
+        }
+
+        .wrapper .nav{
+            margin-left: 10px;
+            height: 40px;
+            background-color: #f1f3f5;
+        }
+
+        .nav span{
+            margin-right: 10px;
+            line-height: 40px;
+            font-size: small;
+            font-weight: bold;
+        }
+        .wrapper .content{
+            margin: 5px 5px 10px 10px;
+            border: 1px solid #ced4da;
+            display: block;
+            height: 100%;
+        }
+        .content h1{
+            margin: 15px 0px 15px 10px;
+        }
+
+        .content p{
+            font-size: small;
+            margin-left: 10px;
+        }
+
+        .content .img1{
+            display: block;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            width: 400px;
+            height: 400px;
+        }
+
+        .footer{
+            height: 40px;
+            border: 1px solid #ced4da;
+            background-color: #f1f3f5;
+            color: gray;
+            line-height: 40px;
+            text-align: center;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo"><span class="logoTxt">Logo</span></div>
+        <div class="nav">
+            <span>Home</span>
+            <span>About</span>
+            <span>Contract</span>
+        </div>
+        <article class="content">
+            <h1>Static Position Example</h1>
+            <p>This is an example of a web page with static position.</p>
+            <img src="https://images.unsplash.com/photo-1542404793-8d6d85fcf418?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" class="img1">
+            <p>
+                Maybe it's hard to believe what's with my obvious charm and good looks but people used to think that I was a monster
+                And for a long time, I believe them. But after a while, you learn to ignore the names people calling you. you just trust who you are.
+            </p>
+            <p>
+                Love comes from a strong personal bond. Love is that we understand and respect each other. 
+                Love is that we take care of each other and support each other. Love is what we sacrifice for each other. 
+                Love is what we pray for and work for each other.
+                Love is one of the most important things we need to live. Love helps us live happily.
+            </p>
+        </article>
+        <div class="footer">
+            <span>Copyright ⓒ 2023</span>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping Mall Layout</title>
+    <style>
+      /* 전체 레이아웃 스타일 */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        color: #333;
+      }
+      /* 헤더 스타일 */
+      header {
+        background-color: #f5f5f5;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      header h1 {
+        margin: 0;
+      }
+      header ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      header li {
+        margin-left: 20px;
+      }
+      header a {
+        color: #333;
+        text-decoration: none;
+      }
+      /* 메인 컨텐츠 스타일 */
+      main {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+      }
+      main article {
+        border: 1px solid #ccc;
+        padding: 20px;
+      }
+      main img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+      }
+      main h2 {
+        margin: 10px 0;
+      }
+      main p {
+        margin: 0;
+      }
+      main button {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      /* 푸터 스타일 */
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      footer p {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Shop</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <article>
+        <img src="https://via.placeholder.com/300x300" alt="Product Image">
+        <h2>Product 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur purus vel lorem bibendum, eu suscipit neque luctus.</p>
+        <button>Add to Cart</button>
+      </article>
+      <article>
+        <img src="https://via.placeholder.com/300x300" alt="Product Image">
+        <h2>Product 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur purus vel lorem bibendum, eu suscipit neque luctus.</p>
+        <button>Add to Cart</button>
+      </article>
+      <article>
+        <img src="https://via.placeholder.com/300x300" alt="Product Image">
+
+        <h2>Product 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur purus vel lorem bibendum, eu suscipit neque luctus.</p>
+        <button>Add to Cart</button>
+      </article>
+      <article>
+        <img src="https://via.placeholder.com/300x300" alt="Product Image">
+        <h2>Product 4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur purus vel lorem bibendum, eu suscipit neque luctus.</p>
+        <button>Add to Cart</button>
+      </article>
+      <article>
+        <img src="https://via.placeholder.com/300x300" alt="Product Image">
+        <h2>Product 5</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur purus vel lorem bibendum, eu suscipit neque luctus.</p>
+        <button>Add to Cart</button>
+      </article>
+      <article>
+        <img src="https://via.placeholder.com/300x300" alt="Product Image">
+        <h2>Product 6</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur purus vel lorem bibendum, eu suscipit neque luctus.</p>
+        <button>Add to Cart</button>
+      </article>
+    </main>
+    <footer>
+      <p>&copy; 2023 My Shop. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

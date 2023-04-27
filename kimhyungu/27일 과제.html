@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>도형 만들기</title>
+</head>
+<body>
+<script>
+    /*콘솔입력*/
+    /*사각형*/
+     function box(h,w){
+for(let i=0; i<h; i++){
+    let row='*';
+    for(let j=0;j<w;j++){
+        row+='*'
+    }
+    console.log(row)
+}
+}
+/*삼각형*/
+function triangle1(high){
+    for(let i= 0; i<high;i++){
+        let row=' ';
+        for(let j=0;j<=i;j++){
+            row+='*';
+        }
+        console.log(row)
+    }
+}
+/*역 정삼각형*/
+function triangle2(high){
+    let row='\n'
+    for(let i=0;i<high;i++){
+        for(let j=0;j<i;j++){
+            row+=' ';
+        }
+        for(let b=0;b<(2*(high-i-1)+1);b++){
+            row +='*'
+        }
+        row +='\n';
+    }
+    console.log(row)
+}
+/*피라미드*/
+function pyramid(high){
+    let row='\n'
+    for(let i=0; i<high;i++){
+        for(let j=0;j<(high-i);j++){
+            row +=" ";
+        }
+        for(let d=0;d<(2*i+1);d++){
+            row +='*';
+        }
+        row +='\n';
+    }
+    console.log(row)
+}
+/*다이아몬드*/
+function diamond(high){
+    let row='\n'
+    for(let i=0; i<high;i++){
+        for(let j=0;j<(high-i-1);j++){
+            row +=" ";
+        }
+        for(let d=0;d<(2*i+1);d++){
+            row +='*';
+        }
+        row +='\n';
+    }
+    for(let i=0;i<high;i++){
+        for(let j=0;j<i;j++){
+            row+=' ';
+        }
+        for(let b=0;b<(2*(high-i-1)+1);b++){
+            row +='*'
+        }
+        row +='\n';
+    }
+    console.log(row)
+}  
+</script>
+</body>
+</html>

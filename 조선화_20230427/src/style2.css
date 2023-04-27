@@ -1,0 +1,24 @@
+h2{
+    color:red;
+}
+p:first-child{
+    color:crimson;
+    font-style: italic;
+}
+p:nth-child(n+4){
+    font-style: italic;
+}
+.container{
+    background-color: lightgray;
+}
+
+input:focus{
+    background-color: lightblue;
+}
+
+p:nth-child(n+10){
+    width:100%;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

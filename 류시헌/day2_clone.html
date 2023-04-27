@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Selector Example</title>
+	<style>
+		/* 스타일을 적용할 클래스 선택자 */
+		.bold {
+			font-weight: bold;
+		}
+
+		/* 스타일을 적용할 ID 선택자 */
+		#red-text {
+			color: red;
+		}
+
+		/* 자손 선택자 */
+		.container p {
+			font-size: 18px;
+		}
+
+		/* 후손 선택자 */
+		.container > div {
+			background-color: #f0f0f0;
+		}
+
+		/* 인접 형제 선택자 */
+		h2 + p {
+            font-style: italic;
+			color: crimson;
+		}
+
+		/* 일반 형제 선택자 */
+		ul ~ p {
+			font-style: italic;
+		}
+
+        .overflow-box ~ p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 80%;
+        }
+		/* 속성 선택자 */
+		input[type="text"] {
+			background-color: #e8f0fe;
+		}
+
+		/* 가상 클래스 선택자 */
+		a:hover {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Selector Example</h1>
+	<div class="container">
+		<h2 id="red-text">Lorem Ipsum</h2>
+		<p class="bold">이 요소는 단락 요소 입니다. 글자의 색 이름은 `crimson`입니다. font-style은 이탤릭입니다.</p>
+		<p>이 요소는 단락 요소 입니다.1</p>
+		<p>이 요소는 단락 요소 입니다.2</p>
+		<p>이 요소는 단락 요소 입니다.3</p>
+		<ul>
+			<li>unordered list 입니다. ul -> li의 구조를 가집니다. 1</li>
+			<li>unordered list 입니다. ul -> li의 구조를 가집니다. 2</li>
+			<li>unordered list 입니다. ul -> li의 구조를 가집니다. 3</li>
+		</ul>
+		<p>이 요소는 단락 요소 입니다.4</p>
+		<p>이 요소는 단락 요소 입니다.5</p>
+		<p>이 요소는 단락 요소 입니다.6</p>
+		<div class="overflow-box">Div container</div>
+		<p>단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100% 를 적용해보세요!</p>
+		<p>단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100% 를 적용해보세요!</p>
+		<p>단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100% 를 적용해보세요!</p>
+		<input type="text" placeholder="Enter text here...">
+		<a href="#">Link example</a>
+	</div>
+</body>
+</html>

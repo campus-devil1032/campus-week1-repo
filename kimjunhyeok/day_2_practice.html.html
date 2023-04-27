@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Example</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 6vh;
+            background-color: #f7f7f7;
+            padding: 0px;
+        }
+
+        h2 {
+            color: red;
+        }
+
+        h2+p {
+            color: crimson;
+            font-style: italic;
+        }
+
+        .itl {
+            font-style: italic;
+        }
+
+        .txt_line {
+            width: 100%;
+            padding: 0 5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>CSS Selector Example</h1>
+        <h2>Lorem Ipsum</h2>
+        <p>이 요소는 단락 요소입니다. 글자 색 이름은 'crimson'입니다. font-style은 이텔릭입니다.</p>
+        <p>이 요소는 단락 요소입니다. 1</p>
+        <p>이 요소는 단락 요소입니다. 2</p>
+        <p>이 요소는 단락 요소입니다. 3</p>
+        <ul>
+            <li>unordered list 입니다. ul -> li의 구조를 가집니다. 1</li>
+            <li>unordered list 입니다. ul -> li의 구조를 가집니다. 2</li>
+            <li>unordered list 입니다. ul -> li의 구조를 가집니다. 3</li>
+        </ul>
+        <p class="itl">이 요소는 단락 요소입니다. 4</p>
+        <p class="itl">이 요소는 단락 요소입니다. 5</p>
+        <p class="itl">이 요소는 단락 요소입니다. 6</p>
+    </div>
+    <div class="container">
+        <p>Div container</p>
+    </div>
+    <p class="txt_line itl">단락요소입니다. 구글에 "css 텍스트 ...처리"를 검색해서 적용해보세요 width=100%를 적용해보세...</p>
+    <p class="txt_line itl">단락요소입니다. 구글에 "css 텍스트 ...처리"를 검색해서 적용해보세요 width=100%를 적용해보세...</p>
+    <p class="txt_line itl">단락요소입니다. 구글에 "css 텍스트 ...처리"를 검색해서 적용해보세요 width=100%를 적용해보세...</p>
+    <input type="text"> <a href="#">click here</a>
+
+
+</body>
+
+</html>

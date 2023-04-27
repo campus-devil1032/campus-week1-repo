@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Example</title>
+    <style>
+        h2 {
+            color: red;
+
+
+        }
+
+
+        h2+p {
+            color: crimson;
+            font-style: italic;
+        }
+
+        nav {
+            font-size: 0.7rem;
+        }
+
+        nav~p {
+            font-style: italic;
+        }
+
+        .content {
+            background-color: gray;
+        }
+
+        .content1 {
+            font-style: italic;
+            width: 100%;
+            overflow: hidden;
+            text-overflow:ellipsis; /*... 이 안나오고 글자가 사라지기만 합니다.*/
+            white-space: nowrap;
+            word-break: break-all;
+        }
+
+        [href]{
+            color: blueviolet;
+        }
+         
+       
+    </style>
+</head>
+
+<body>
+    <h1>CSS Selector Example</h1>
+    <h2>Lorerm Ipsum</h2>
+    <p><strong>이 요소는 단락 요소입니다 글자의 색 이름은 'crimson'입니다. font-style은 이텔릭입니다.</strong></p>
+    <p>이 요소는 단락 요소 입니다.1</p>
+    <p>이 요소는 단락 요소 입니다.2</p>
+    <p>이 요소는 단락 요소 입니다.3</p>
+    <nav>
+        <ul>
+            <li>unordered list 입니다. ul -> li의 구조를 가집니다. 1</li>
+            <li>unordered list 입니다. ul -> li의 구조를 가집니다. 2</li>
+            <li>unordered list 입니다. ul -> li의 구조를 가집니다. 3</li>
+        </ul>
+    </nav>
+    <p>이 요소는 단락 요소 입니다.4</p>
+    <p>이 요소는 단락 요소 입니다.5</p>
+    <p>이 요소는 단락 요소 입니다.6</p>
+
+    <div class="content">
+        <p>Div container</p>
+    </div>
+
+    <div class="content1">
+        <p>단락요소입니다. 구글에 "css 텍스트... 처리"를 검색해서 적용해보세요 width=100%를 적용해보세요.</p>
+        <p>단락요소입니다. 구글에 "css 텍스트... 처리"를 검색해서 적용해보세요 width=100%를 적용해보세요.</p>
+        <p>단락요소입니다. 구글에 "css 텍스트... 처리"를 검색해서 적용해보세요 width=100%를 적용해보세요.</p>
+    </div>
+
+    <form>
+        <input type="text" placeholder="내용을 입력해 주세요" style="background-color: #e2e2e2;" ><a href="#">link example</a>
+    </form>
+        
+</body>
+
+</html>

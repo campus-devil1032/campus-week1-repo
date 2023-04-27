@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function dot1(line) {
+            if (line > 0) {
+                for (let i = 0; line > i; i++) {
+                    let dot = "";
+                    for (let j = 0; i + 1 > j; j++) { dot = dot + "*"; }
+                    console.log(dot);
+                }
+            }
+        }
+        /*왼쪽부터*/
+        dot1(10);
+
+        function dot2(line) {
+            let spa = 0;
+            if (line > 0) {
+                for (let i = 0; line > i; i++) {
+                    let dot = "";
+                    let spa = line - i - 1;
+                    for (let k = 0; spa > k; k++) { dot = dot + " "; }
+                    for (let j = 0; i + 1 > j; j++) { dot = dot + "*"; }
+                    console.log(dot);
+                }
+            }
+        }
+        /*오른쪽부터*/
+        dot2(10);
+
+        function dot3(line) {
+            let width = line;
+
+            if (line > 0) {
+                for (let i = 0; line > i; i++) {
+                    let dot = "";
+
+                    for (let j = 0; width > j; j++) {
+                        dot = dot + "*"
+                    }
+                    console.log(dot);
+                }
+
+
+
+            }
+
+        }
+        /*정사각형*/
+        dot3(10);
+
+        function dot4(line) {
+            let spa = 0;
+            let spa2 = 0;
+            if (line > 0) {
+                for (let i = 0; line > i; i++) {
+                    let dot = "";
+                    let spa = line - i - 1;
+                    let spa2 = spa
+                    for (let k = 0; spa > k; k++) { dot = dot + " "; }
+                    dot = dot + "*";
+                    if (i != 0) {
+                        for (let j = 0; i > j; j++) { dot = dot + "**"; }
+                    }
+                    for (let l = 0; spa2 > l; l++) { dot = dot + " "; }
+                    console.log(dot);
+                }
+            }
+        }
+        /*삼각형*/
+        dot4(10);
+        function dot5(line) {
+            let spa = 0;
+            let spa2 = 0;
+            if (line > 0) {
+                for (let i = line; 0 < i; i--) {
+                    let dot = "";
+                    let spa = line - i + 1;
+                    let spa2 = spa
+                    for (let k = 1; spa > k; k++) { dot = dot + " "; }
+                    dot = dot + "*";
+                    if (i != 1) {
+                        for (let j = 1; i > j; j++) { dot = dot + "**"; }
+                    }
+                    for (let l = 1; spa2 > l; l++) { dot = dot + " "; }
+                    console.log(dot);
+                }
+            }
+        }
+        /*역삼각형*/
+        dot5(10);
+
+        function dot6(line) {
+            let spa = 0;
+            let spa2 = 0;
+            let halfline = line / 2;
+            let line2 = line;
+            let dot = "";
+            if (line > 0) {
+                for (let i = 0; line > i; i++) {
+                    dot = "";
+                    spa = 0;
+                    spa2 = 0;
+                    if (i < halfline) {
+                        spa = halfline - i - 1;
+                        spa2 = spa
+                        for (let k = 0; spa > k; k++) { dot = dot + " "; }
+                        dot = dot + "*";
+                        if (i != 0) {
+                            for (let j = 0; i > j; j++) { dot = dot + "**"; }
+                        }
+                        for (let l = 0; spa2 > l; l++) { dot = dot + " "; }
+                        console.log(dot);
+                    }
+                    
+                    if (i >= halfline) {
+                        spa = -halfline + i ;
+                        sp2 = spa;
+                        for (let k = 0; spa > k; k++) { dot = dot + " "; }
+                        dot = dot + "*";
+
+                        for (let j = line-1; i < j; j--) { dot = dot + "**"; }
+
+                        for (let l = 0; spa2 > l; l++) { dot = dot + " "; }
+                        console.log(dot);
+                    }
+                            
+                }
+
+            }
+        }
+
+        /*다이아*/
+        dot6(10);
+
+        /*별*/
+    </script>
+    <p>check console</p>
+</body>
+
+</html>

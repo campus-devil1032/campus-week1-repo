@@ -1,0 +1,19 @@
+.bigtitle {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 50px;
+}
+#intro-for-id {
+    background-color: yellow;
+}
+body p {
+    color: red;
+}
+section>p { /*  */
+    color: aquamarine;
+}
+h1 + p { /*  인접 형제 선택자 */
+    font-size: 60px;
+}

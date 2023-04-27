@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Example</title>
+    <style>
+        h2 {
+            color: blueviolet;
+        }
+        h2 + p {
+            color: crimson;
+            font-weight: bold;
+            font-style: italic;
+        }
+        ul ~ p {
+            font-style: italic;
+        }
+        .container {
+            background-color: gainsboro;
+        }
+        
+        .container ~ p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 100%;
+        }
+
+        #input {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selector Example</h1>
+    <div class="lorem_ipsum">
+        <h2>Lorem Ipsum</h2>
+        <p>이 요소는 단락 요소 입니다. 글자의 색 이름은 'crimson'입니다. font-style은 이탤릭입니다.</p>
+        <p>이 요소는 단락 요소 입니다1.</p>
+        <p>이 요소는 단락 요소 입니다2.</p>
+        <p>이 요소는 단락 요소 입니다3.</p> 
+    </div>
+    <ul>
+        <li>unordered list 입니다. ul -> li의 구조를 가집니다.1</li>
+        <li>unordered list 입니다. ul -> li의 구조를 가집니다.2</li>
+        <li>unordered list 입니다. ul -> li의 구조를 가집니다.3</li>
+    </ul>
+    
+    <p>이 요소는 단락 요소 입니다4.</p>
+    <p>이 요소는 단락 요소 입니다5.</p>
+    <p>이 요소는 단락 요소 입니다6.</p> 
+    
+    <div class="container">Div container</div>
+
+    <p>단락 요소 입니다. 구글에 "css텍스트... 처리"를 검색해서 적용해보세요. width=100%를 적용해...</p>
+    <p>단락 요소 입니다. 구글에 "css텍스트... 처리"를 검색해서 적용해보세요. width=100%를 적용해...</p>
+    <p>단락 요소 입니다. 구글에 "css텍스트... 처리"를 검색해서 적용해보세요. width=100%를 적용해...</p>
+    
+    <input type="text" id="input" placeholder="Enter text here">
+    <a href="file:///Users/koyoungjun/Desktop/%20campus%20-backend-13th/Front/CSS_0425/CSS_Selector_Example.html">Link example</a>
+</body>
+</html>

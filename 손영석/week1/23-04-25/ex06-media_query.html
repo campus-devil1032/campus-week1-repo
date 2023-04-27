@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query Example</title>
+
+    <style>
+        body {
+            background-color: white;
+        }
+
+        @media (max-width: 768px) {
+            /* 너비 768px 이하인 경우 */
+            body {
+                background-color: lightblue;
+            }
+        }
+
+        @media (min-width: 769px) {
+            /* 너비 769px 이상인 경우 */
+            body {
+                background-color: lightgreen;
+            }
+        }
+
+        @media (max-height: 768px) {
+            /* 높이 768px 이하인 경우 */
+            body {
+                color: red;
+            }
+        }
+
+        @media (min-height: 769px) {
+            /* 높이 769px 이상인 경우 */
+            body {
+                color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Query Example</h1>
+    <p>CSS에서 미디어 쿼리를 사용한 예입니다.</p>
+</body>
+</html>

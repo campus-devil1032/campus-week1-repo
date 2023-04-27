@@ -1,0 +1,19 @@
+h2{
+    color: red;
+}
+h2 > p {
+    font-style: italic;
+    color: crimson;
+}
+ul ~p {
+    font-style: italic;
+}
+.r{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+input{
+    background-color: lightgray;
+}

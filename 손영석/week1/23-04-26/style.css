@@ -1,0 +1,52 @@
+body {
+    border: 1px solid lightgray;
+    padding: 7px;
+    margin: 20px;
+  }
+
+.logo {
+    border: 1px solid lightgray;
+    padding: 7px;
+    background-color: #f0f0f0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu {
+    border: 1px solid lightgray;
+    padding: 9px;
+    margin-top: 7px;
+    background-color: #f0f0f0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: inherit;
+    margin: 6px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.image {
+    text-align: center;
+}
+
+.main {
+    border: 1px solid lightgray;
+    margin-top: 7px;
+    padding: 20px;
+}
+
+.main p {
+    font-size: 13px;
+}
+
+.copyright {
+    border: 1px solid lightgray;
+    padding: 10px;
+    margin-top: 7px;
+    color: dimgray;
+    background-color: #f0f0f0;
+    text-align: center;
+    font-size: 10px;   
+}

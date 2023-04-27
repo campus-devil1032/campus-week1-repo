@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>마름모</title>
+    </head>
+    <body>
+
+        <script>
+            const height = 9
+
+            for (let a=0; a< height; a++) {
+                let row = ' ';
+                for (let b = 0; b < height - a; b++) {
+                    row += ' ';
+                }
+                for (let c = 0; c <= a*2; c++) {
+                    row += '*';
+                }
+                console.log(row);
+            }
+
+            for(let a=height - 2; a >=0; a--) {
+                let row = ' ';
+                for(let b= 0;b <height - a; b++) {
+                    row +=' ';
+                }
+                for(let c=0; c <=a*2; c++) {
+                    row +='*';
+                }
+                console.log(row)
+            }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Static Position Example</title>
+    <style>
+        .container {
+            position: absolute;
+            border: 2px solid gainsboro;
+            padding: 10px;
+            margin: 20px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: whitesmoke;
+            border: 2px solid gainsboro;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .nav {
+            background-color: whitesmoke;
+            border: 2px solid gainsboro;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .nav a {
+            color: black;
+            font-weight: bold;
+            text-decoration-line: none;
+            justify-content: flex-start;
+            align-items: center;
+            padding-right: 15px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+            border: 2px solid gainsboro;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 700px;
+            height: auto;
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            color: gray;
+            background-color: whitesmoke;
+            border: 2px solid gainsboro;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Logo</div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="content">
+            <h1>Static Position Example</h1>
+            <p>This is an example of a web page with static position.</p>
+            <img src="https://cdn.pixabay.com/photo/2023/04/13/07/48/door-7921956_960_720.jpg" alt="예시 이미지">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod, quam vel finibus blandit, velit
+                velit tristique mi, vel vestibulum dolor magna quis purus. Nullam vel nunc elit. Sed sodales est sit
+                amet lorem varius, vel interdum erat luctus. Fusce venenatis massa id leo egestas congue.<br>
+                <br>
+                Integer euismod tincidunt quam eget dictum. Nulla eget mauris vel magna blandit hendrerit. Donec ut
+                consequat justo. Proin in nisl sit amet tellus blandit bibendum eu ac mi. Vivamus at consectetur nisi.
+                Nam dapibus vestibulum odio, nec suscipit odio laoreet quis.
+            </p>
+        </div>
+        <div class="footer">
+            Copyright © 2023
+        </div>
+    </div>
+</body>
+
+</html>

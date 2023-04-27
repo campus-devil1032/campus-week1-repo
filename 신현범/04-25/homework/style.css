@@ -1,0 +1,23 @@
+.bigtitle {
+    font-size: 30px;
+}
+
+.intro {
+    color: red;
+}
+
+.pp {
+    color: crimson;
+    font-style: italic;
+}
+
+section {
+    background-color: gainsboro;
+}
+
+.box {
+    width: 270px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* 말줄임 적용 */
+  }

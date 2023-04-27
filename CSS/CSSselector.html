@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Example</title>
+    <style>
+        h1 {
+            font-size: 35px;
+            font-weight: bold;
+            color: black;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+        }
+
+        h2+p {
+            font-size: 20px;
+            font-style: italic;
+            color: crimson;
+        }
+
+        ul~p {
+            font-style: italic;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            /* background-color: #f7f7f7; */
+            padding: 20px;
+        }
+
+        .head {
+            background-color: rgb(203, 203, 203);
+            font-size: 10px;
+        }
+
+        .box {
+            display: block;
+            width: 100%;
+            white-space: nowrap;
+            /* 줄바꿈 X */
+            overflow: hidden;
+            /* 숨김 */
+            text-overflow: ellipsis;
+            /* ... */
+            font-style: italic;
+        }
+
+        input.text {
+            position: absolute;
+            display: block;
+            width: 100px;
+            height: 20px;
+            font-size: 15px;
+            background-color: lightblue;
+            color: black;
+        }
+
+[href] {
+    position: static;
+    margin-left: 120px;
+}
+       
+    </style>
+</head>
+
+<body>
+    <h1>CSS Selector Example</h1>
+    <h2>Lorem Ipsum</h2>
+    <p>이 요소는 단락 요소 입니다. 글자의 색 이름은 'crimson'입니다. font-style은 이탤릭입니다.</p>
+    <p>이 요소는 단락 요소 입니다.1</p>
+    <p>이 요소는 단락 요소 입니다.2</p>
+    <p>이 요소는 단락 요소 입니다.3</p>
+    <ul>
+        <li>unordered list dlqslek. ul -> li의 구조를 가집니다.1</li>
+        <li>unordered list dlqslek. ul -> li의 구조를 가집니다.2</li>
+        <li>unordered list dlqslek. ul -> li의 구조를 가집니다.3</li>
+    </ul>
+    <p>이 요소는 단락 요소 입니다.4</p>
+    <p>이 요소는 단락 요소 입니다.5</p>
+    <p>이 요소는 단락 요소 입니다.6</p>
+    <div class="container">
+        <div class="head">
+            <h3>Div container</h3>
+        </div>
+        <div class="box">
+            단락요소입니다. 구글에 "CSS 텍스트...처리"를 검색해서 적용해보세요 width=100%를 적용해보세요. </div>
+        <div class="box">
+            단락요소입니다. 구글에 "CSS 텍스트...처리"를 검색해서 적용해보세요 width=100%를 적용해보세요. </div>
+        <div class="box">
+            단락요소입니다. 구글에 "CSS 텍스트...처리"를 검색해서 적용해보세요 width=100%를 적용해보세요.
+        </div>
+        <div class="input text">
+            <form>
+            <label for="text"></label>
+            <input type="text" class="input text" id="text" name="text" placeholder="enter the text..."> 
+          </form>
+        </div>
+        <a href="#">Link Example</a>
+      
+    </div>
+    
+</body>
+
+</html>

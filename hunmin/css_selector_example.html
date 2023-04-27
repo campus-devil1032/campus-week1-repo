@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h1{
+                color: black;
+            }
+
+            .intro{
+                color: red;
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .crimson{
+                color: crimson;
+                font-style: italic;
+                font-weight: bold;
+            }
+
+            .container{
+                background-color: lightgray;
+            }
+
+            .text{
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;  /*넘치는 부분 자르고 보이지않게*/
+                text-overflow: ellipsis; /*생략문자 ...표기*/
+                font-style: italic;
+                width: 100%; /* 100%로 하면 제한이 없는데 넘치는 부분이 생길수 있을까*/
+            }
+
+            #main{
+                font-size: 15px;
+            }
+
+            [href]{
+                color: purple;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <h1>CSS Selector Example</h1>
+            <p class="intro">Lorem Ipsum</p>
+            <p class="crimson">이 요소는 단락 요소입니다. 글자의 색이름은 'crimson'입니다. font-style은 이탤릭입니다.</p>
+            <p>이 요소는 단락 요소 입니다.1</p>
+            <p>이 요소는 단락 요소 입니다.2</p>
+            <p>이 요소는 단락 요소 입니다.3</p>
+            <ul>
+                <li>unordered list입니다. ul -> li의 구조를 가집니다.1</li>
+                <li>unordered list입니다. ul -> li의 구조를 가집니다.2</li>
+                <li>unordered list입니다. ul -> li의 구조를 가집니다.3</li>
+            </ul>
+            <p>이 요소는 단락 요소 입니다.4</p>
+            <p>이 요소는 단락 요소 입니다.5</p>
+            <p>이 요소는 단락 요소 입니다.6</p>
+            <p class="container">Div container</p>
+            <p class="text">단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100%를 적용해보세요!</p>
+            <p class="text">단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100%를 적용해보세요!</p>
+            <p class="text">단락요소입니다. 구글에 "css 텍스트 ... 처리"를 검색해서 적용해보세요 width=100%를 적용해보세요!</p>
+            <p class="box">Enter text here...</p>
+            <a href="Link example">Link example</a>
+        </div>
+    </body>
+</html>

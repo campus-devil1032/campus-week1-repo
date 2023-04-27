@@ -8,6 +8,7 @@ function square(integer) {
         console.log(str);
         str = "";
     }
+    console.log();
 }
 
 function upright(integer) {
@@ -19,6 +20,7 @@ function upright(integer) {
         console.log(str);
         str = "";
     }
+    console.log();
 }
 
 function leftbottom(integer) {
@@ -30,11 +32,12 @@ function leftbottom(integer) {
         console.log(str);
         str = "";
     }
+    console.log();
 }
 
 function triangle(integer) {
     for (let i = 0; i < integer; i++) {
-        for (let j = 0; j < integer - i; j++) {
+        for (let j = 0; j < integer - i-1; j++) {
             str += " ";
         }
         for (let j = 0; j < i * 2 + 1; j++) {
@@ -46,6 +49,7 @@ function triangle(integer) {
         console.log(str);
         str = "";
     }
+    console.log();
 }
 
 function rtriangle(integer) {
@@ -62,6 +66,7 @@ function rtriangle(integer) {
         console.log(str);
         str = "";
     }
+    console.log();
 }
 
 function diamond(integer) {
@@ -79,6 +84,7 @@ function diamond(integer) {
         console.log(str);
         str = "";
     }
+    console.log();
 }
 
 function starstar(integer) {
@@ -114,6 +120,12 @@ function starstar(integer) {
         console.log(str);
         str = "";
     }
+    console.log();
 }
 
+triangle(10);
+rtriangle(10);
+diamond(11);
+square(9);
+leftbottom(10);
 starstar(8);

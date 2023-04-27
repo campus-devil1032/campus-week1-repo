@@ -1,0 +1,128 @@
+1. 피라미드
+
+function star(height) {
+            for (let i = 0; i < height; i++) {
+                let row = ' ';
+                for (let j = height-1; j>i; j--) {
+                    row += ' ';
+                }
+			
+		    for (let j = 0; j < 2*i+1; j++) {
+			row += '*';	
+			
+					 
+		}
+		    console.log(row);
+               
+            }
+
+		
+		
+  }
+
+star(10)
+
+
+
+
+2. 역피라미드
+
+function star(height) {
+            for (let i = 0; i < height; i++) {
+                let row = ' ';
+                for (let j = 0; j<i; j++) {
+                    row += ' ';
+                }
+			
+		    for (let j = 2*height-1; j > 2*i; j--) {
+			row += '*';	
+			
+					 
+		}
+		    console.log(row);
+               
+            }
+
+		
+		
+  }
+
+star(10)
+
+
+3. 마름모
+
+function star(height) {
+           for (let i = 0; i < height; i++) {
+                let row = ' ';
+                for (let j = height-1; j>i; j--) {
+                    row += ' ';
+                }
+			
+		    for (let j = 0; j < 2*i+1; j++) {
+			row += '*';	
+			
+					 
+		}
+		    console.log(row);
+               
+            }
+
+		 for (let i = 0; i < height; i++) {
+                let row = ' ';
+                for (let j = 0; j<i; j++) {
+                    row += ' ';
+                }
+			
+		    for (let j = 2*height-1; j > 2*i; j--) {
+			row += '*';	
+			
+					 
+		}
+		    console.log(row);
+               
+            }
+
+
+			
+		
+  }
+
+star(10)
+
+
+
+4. 사각형
+
+function star(height) {
+            for (let i = 0; i < height; i++) {
+                let row = ' ';
+                for (let j = 0; j < height; j++) {
+                    row += '*';
+                }
+                console.log(row);
+            }
+  }
+
+
+star(10)
+
+
+
+5. 직각 삼각형
+
+function star(height) {
+	 for (let i = 0; i < height; i++) {
+		let row = ' ';
+		for(let j=0; j<=i; j++){
+		row += '*';
+	}
+	console.log(row);
+	}
+}
+
+star(10)
+
+
+
+6. 별모양

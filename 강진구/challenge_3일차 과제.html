@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강진구_과제_0426</title>
+    <style>
+        
+        body{
+            padding-top: 30px;
+            padding-left: 30px;
+            padding-right: 15px;
+            
+        }
+        .container{
+            padding: 10px;
+            display: grid;
+            
+            grid-template-areas: "logo" "catalogue" "mid" "bottom";
+            
+            align-items: center;
+            grid-template-columns: none;
+            grid-template-rows: 32px 16px fr 8px;
+            grid-gap: 10px;
+            border: solid 1px #cac8c8;
+            
+            
+            background-color: white;
+            
+        }
+
+        .logo {
+            padding: 10px;
+            grid-area: logo;
+            background-color: #eee;
+            border: solid 1px #cac8c8;
+        }
+
+        .catalogue {
+            color:rgb(120, 115, 115);
+            padding:10px;
+            grid-area: catalogue;
+            background-color:#eee;
+            border: solid 1px #cac8c8;
+        }
+
+        a{ text-decoration:none; color:black}
+
+        .box {
+            background-color:#eee;
+            padding:10px;
+            border: solid 1px #cac8c8;
+        }
+
+        img {
+            padding:10px;
+            display:block; margin:auto;
+        }
+
+        .bottom {
+            color:rgb(120, 115, 115);
+            padding:10px;
+            grid-area: bottom;
+            background-color:#eee ;
+            text-align: center;
+            border: solid 1px #cac8c8;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="logo"><h1>Logo</h1>
+    </div>
+    
+    <div class="catalogue"><h3><a href = "#">Home</a> &nbsp;&nbsp; 
+                                <a href = "#">About</a>&nbsp;&nbsp;
+                                 <a href = "#">Contact </a></h3>
+    </div>
+    
+    <div class = "box">
+    <div><h1>Static Position Example</h1>
+    </div>
+    
+    <div>This is an example of a web page with static position</div>
+    
+    <div>
+        <img src="./cssimg.jpeg" alt="이미지가 없어졌어요">
+    </div>
+    
+    <div>Lorem ipsum dolor sit amet,consectetur adipiscing elit. Mauris euismod, quam vel finibus blandit, velit velit tristique mi, vel
+        vestibulum dolor magna quis purus, Nullam vel nunc elit. Sed sodales est sit amet lorem varius, vel interdum erat luctus. Fusce
+        venenatis massa id leo egestas congue
+    </div>
+    <p></p>
+    <div>Integer euismod tincidunt quam eget dictum. Nulla eget mauris vel magna blandit hendrerit. Donec ut consequat justo. Proin in
+        nisl sit amet tellus blandit bibendum eu ac mi. Vivamus at consectetur nisi. Nam dapibus vestibulum odio, nec suscipit odio laoreet
+        quis
+    </div>
+    <p></p>
+    </div>
+
+    <div class="bottom">Copyright 2023</div>
+    </div>
+</body>
+</html>

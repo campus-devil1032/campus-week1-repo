@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Selector Example</title>
+        <style>
+           h2 + p {
+            color: red;
+           }
+            h3 {
+            color: crimson;
+            font-style: italic;
+            font-size: 1em;
+            }
+        </style>
+            <h1>CSS Selector Example</h1>
+            <h2>Lorem Ipsum</h2>
+            <h3>이 요소는 단락 요소 입니다.</h3>
+    </head>
+    <body>
+        <ul>이 요소는 단락 요소 입니다.1</ul>
+        <ul>이 요소는 단락 요소 입니다.2</ul>
+        <ul>이 요소는 단락 요소 입니다.3</ul>
+            <li>unordered list 입니다. ul -> li의 구조를 가집니다. 1</li>
+            <li>unordered list 입니다. ul -> li의 구조를 가집니다. 2</li>
+            <li>unordered list 입니다. ul -> li의 구조를 가집니다. 3</li>
+        
+        <ul>이 요소는 단락 요소 입니다.4</ul>
+        <ul>이 요소는 단락 요소 입니다.5</ul>
+        <ul>이 요소는 단락 요소 입니다.6</ul>
+        <style>
+            ul ~ p {
+                font-style: italic;
+            }
+        </style>
+        
+    </body>
+</html>

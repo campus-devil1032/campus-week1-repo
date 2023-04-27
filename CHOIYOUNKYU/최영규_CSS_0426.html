@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Static Position Example</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "nav nav nav"
+                "content content content"
+                "footer footer footer";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto auto 1fr auto;
+            grid-gap: 10px;
+            justify-items: center;
+            align-items: center;
+            height: 90vh;
+            background-color: white;
+            border-width: 1px;
+            border-color: lightgray;
+            border-style: solid;
+            padding: 10px;
+            margin: 20px;
+            margin-bottom : 30px;
+ 
+        }
+
+
+        
+        .header {
+            grid-area: header;
+            background-color: whitesmoke;
+            border-width: 1px;
+            border-color: lightgray;
+            border-style: solid;
+            width: 100%;
+            height: 50px;
+            display:flex;
+            justify-content: left;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+            text-indent: 10px;
+            color: black;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: whitesmoke;
+            border-width: 1px;
+            border-color: lightgray;
+            border-style: solid;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            font-size: 15px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .nav a {
+            color: black;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .content {
+            grid-area: content;
+            border-width: 1px;
+            border-color: lightgray;
+            border-style: solid;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: black;
+        }
+
+
+        .textbox {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            padding : 10px;
+            margin-left: 30px;
+            overflow: auto;
+        }
+
+        .imgbox {
+            align-items: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: whitesmoke;
+            border-width: 1px;
+            border-color: lightgray;
+            border-style: solid;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            color: gray;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Logo</div>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="content">
+            <div class="textbox">
+                <h2>Static Position Example</h2>
+
+                <p>This is an example of a web page with static position.</p>
+                
+                <div class="imgbox">
+                <img src="https://images.unsplash.com/39/vsSIIQbXTHCO1jBsKm4Q_IMG_1779_edt.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwzOXx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60"></image>
+            </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Mauris euismod, quam vel finibus blandit, velit velit tristique mi,
+                    vel vestibulum dolor magna quis purus. Nullam vel nunc elit. 
+                    Sed sodales est sit amet lorem varius, vel interdum erat luctus. Fusce venenatis massa id leo egestas congue.</p>
+                
+                <p>Integer euismod tincidunt quam eget dictum. Nulla eget mauris vel magna blandit hendrerit. 
+                    Donec ut consequat justo. Proin in nisl sit amet tellus blandit bibendum eu ac mi. Vivamus at consectetur nisi. 
+                    Nam dapibus vestibulum odio, nec suscipit odio laoreet quis.</p>
+                </div>
+        </div>
+
+
+        <div class="footer">Copyright ⓒ 2023</div>
+    </div>
+</body>
+
+</html>
+
+
+<!-- 
+
+코드에서는 footer 클래스를 가진 요소에 grid-area: footer, background-color, width, height, display, justify-content,
+align-items, font-size, font-weight, color 등의 속성을 사용하여 스타일을 지정했습니다.
+grid-area: footer 속성은 grid-template-areas에서 지정한 이름과 일치해야 하며, 그리드에서 요소의 위치를 지정합니다.
+background-color, width, height, display, justify-content, align-items, font-size, font-weight, color 등의
+속성은 header 클래스를 가진 요소와 비슷합니다.
+즉, display: grid 속성을 응용하여 요소들을 그리드 형태로 배치하고, 간격을 조절할 수 있으며, grid-template-areas, grid-template-columns, grid-template-rows,
+justify-items, align-items 등의 속성을 사용하여 정렬을 조절할 수 있습니다
+
+ -->

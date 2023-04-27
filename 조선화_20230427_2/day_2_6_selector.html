@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>selector 연습</title>
+        <link rel="stylesheet" href="./src/style3.css" />
+        <style>
+            /* 
+                선택자(selector) : 요소를 선택하여 스타일을 적용하는 역할 (요소 선택자, 클래스 선택자, ID 선택자, 후손 선택자, 자식 선택자, 인접 형제 선택자)
+            */
+        </style>
+    </head>
+    <body>
+        <div class="header"> header 
+            <div class="nav"> nav </div>
+        </div>
+        <div class="main">
+            <!-- <p>여기</p> -->
+            <div class="article" id="main_article">
+                article1 
+               <p> <a href = "naver.com">네이버 바로가기</a></p>
+            </div>
+            <div class="article" id="sub_article">article2</div>
+            <!-- <p>여기3 <input type="text" value="글" ></p> -->
+            <div class="selection" id="selection_1">selection<!--<p>여기2</p>--></div>
+            <div class="selection" id="selection_2">selection2</div>
+            <div class="aside">aside</div>
+            <!-- <p>여기4 <input type="text" value="글" ></p> -->
+        </div>
+        <div class="footer">
+            <a href = "#">위로</a>
+            <a href = "google.com">구글 바로가기</a>
+        </div>
+    </body>
+</html>

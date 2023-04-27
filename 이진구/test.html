@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Floating Layout Example</title>
+    <style>
+      header {
+        background-color: lightgray;
+        color: black;
+        padding-left: 32px;
+        display: flex;
+        justify-content: space-between;
+        
+ 
+  
+      }
+
+      .topmenu {
+            background-color: #f2f2f2;
+            width: 900px;
+            height: 40px;
+            margin: auto;
+            list-style: none;
+            
+             justify-content: space-between;
+         }
+
+      nav {
+        width: 30%;
+        background-color: #f2f2f2;
+        height: 300px;
+        color: black;
+       
+        justify-content: space-between;
+         
+       
+    
+      }
+
+     li { float: left;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 8px;
+     }
+     
+
+    
+      .content {
+        width: 70%;
+        height: 300px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      footer {
+        clear: both;
+        background-color: lightgray;
+        color: black;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Logo</h1>
+    </header>
+<nav class="topmenu">
+        <ul class="nav">
+            <li> HOME </li>
+            <li> About </li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="content">
+      <h2>Static Position Example</h2>
+      <p>This is an example of a web page with static position</p>
+      <img src="https://www.example.com/images/example.jpg" alt="예시 이미지">
+    </div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod, quam vel finibus blandit, velit velit tristique mi, vel vestibulum dolor magna quis qurus. Nullam vel nunc elit. sed sodales est sit amet lorem varius, vel interdum erat luctus. Fusce venenatis massa id leo egestas comgue</p>
+<p>integer euismod tincidumt quam eget dictum, Nulla eget mauris vel magna blandit hendreit. Donec ut consequat justo. Proin in nisl sit amet tellus blanmdit bibendum eu ac mi. Vivamus at consectetur nisi, Nam dapiubus odio, nec suscipit odio laoreet quis.
+</p>
+    <footer>
+      <p>Copyright © 2023</p>
+    </footer>
+  </body>
+</html>

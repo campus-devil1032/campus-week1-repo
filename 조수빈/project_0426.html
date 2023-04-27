@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 레이아웃 과제</title>
+  <style>
+    * { 
+      margin:0;
+      padding:0;
+    }
+
+    a {
+      text-decoration: none;
+      color:#000;
+    }
+
+    .wrapper {
+      margin:20px;
+      font-size: 16px;
+      border: 1px solid gainsboro;
+    }
+
+    .container {
+      margin:10px;
+    }
+
+    .logo {
+      padding:10px 15px;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      background-color: whitesmoke;
+      border: 1px solid gainsboro;
+    }
+    
+    header {
+      padding:15px;
+      margin-bottom: 10px;
+      background-color: whitesmoke;
+      border: 1px solid gainsboro;
+    }
+
+    header ul li {
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    header ul li a { 
+      font-weight: 700;
+      color:dimgray;
+    }
+
+    .main {
+      padding:20px 15px;
+      border: 1px solid gainsboro;
+      margin-bottom: 10px;
+    }
+    
+    .main h1 {
+      padding-top:20px;
+    }
+    
+    .main .subTitle{
+      padding-top: 20px;
+    }
+
+    .main .imgBox {
+      margin:15px auto;
+      text-align: center;
+    }
+
+    .main p {
+      line-height: 1.5rem;
+      padding-bottom: 1rem;
+    }
+
+    footer {
+      padding:15px;
+      background-color: whitesmoke;
+      border: 1px solid gainsboro;
+      text-align: center;
+      color:gray;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="logo">Logo</div>
+      <header>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="main">
+        <h1>Static Position Example</h1>
+        <p class="subTitle">This is an Example of a web page with static position</p>
+        <div class="imgBox">
+          <img src="https:/via.placeholder.com/500x300" alt="lorem ipsum">
+        </div>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo autem delectus, iusto illum eveniet deleniti quaerat magni minima, eligendi ex voluptatem enim, quidem officia voluptatum fuga. Quasi animi facere exercitationem. Occaecat cupidatat irure occaecat consequat. Consectetur dolor ut eiusmod ipsum id duis reprehenderit ad aliquip. Aliqua in ex enim est excepteur laborum id.</p>
+        <p>Commodo adipisicing id cupidatat aliquip ea. Elit aute magna laboris velit elit aliquip ipsum reprehenderit adipisicing. Dolor elit excepteur esse enim fugiat enim esse esse in occaecat.</p>
+      </div>
+      <footer>Copyright &copy; 2023</footer>
+    </div>
+
+  </div>
+</body>
+</html>

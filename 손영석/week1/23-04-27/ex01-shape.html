@@ -20,24 +20,30 @@
 </head>
 
 <body>
-    <h1>도형만들기</h1>
+    
+        <h1>도형만들기</h1>
 
-    <input type="number" id="shape1" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
-    <button onclick=tiltedTriangle(shape1());>도형1</button><br><br>
-    <input type="number" id="shape2" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
-    <button onclick=square(shape2());>도형2</button><br><br>
-    <input type="number" id="shape3" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
-    <button onclick=triangle(shape3());>도형3</button><br><br>
-    <input type="number" id="shape4" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
-    <button onclick=reverseTriangle(shape4());>도형4</button><br><br>
-    <input type="number" id="shape5" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
-    <button onclick=diamond(shape5());>도형5</button><br><br>
-    <!-- <input type="number" id="shape6" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요"> -->
-    <!-- <button onclick = star(shape6());>도형6</button><br><br> -->
+        <input type="number" id="shape1" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
+        <button onclick=tiltedTriangle(shape1());>도형1</button><br><br>
+        <input type="number" id="shape2" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
+        <button onclick=square(shape2());>도형2</button><br><br>
+        <input type="number" id="shape3" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
+        <button onclick=triangle(shape3());>도형3</button><br><br>
+        <input type="number" id="shape4" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
+        <button onclick=reverseTriangle(shape4());>도형4</button><br><br>
+        <input type="number" id="shape5" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
+        <button onclick=diamond(shape5());>도형5</button><br><br>
+        <!-- <input type="number" id="shape6" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요"> -->
+        <!-- <button onclick = star(shape6());>도형6</button><br><br> -->
+
+
+        <div>내용은 콘솔(F12)에 출력됩니다.</div>
 
     <script>
+
         // 기울어진 삼각형
         function tiltedTriangle(x) {
+            console.clear();
             for (let i = 0; i < x; i++) {
                 let row = "*";
                 for (let j = 0; j < i; j++) {
@@ -49,6 +55,7 @@
 
         // 정사각형
         function square(x) {
+            console.clear();
             for (let i = 0; i < x; i++) {
                 let row = "*";
                 for (let j = 0; j < x - 1; j++) {
@@ -60,6 +67,7 @@
 
         // 삼각형
         function triangle(x) {
+            console.clear();
             for (let i = 0; i < x; i++) {
                 let row = "";
                 for (let j = 0; j < (x - i - 1); j++) {
@@ -74,6 +82,7 @@
 
         // 역삼각형
         function reverseTriangle(x) {
+            console.clear();
             for (let i = x; i >= 0; i--) {
                 let row = "";
                 for (let j = i; j < x; j++) {
@@ -88,6 +97,7 @@
 
         // 다이아몬드
         function diamond(x) {
+            console.clear();
             if (x % 2 === 0) {  // 입력값이 짝수일경우
                 for (let i = 0; i < x / 2; i++) {
                     let row = "";
@@ -135,6 +145,7 @@
 
         // 별모양
         function star() {
+            console.clear();
 
             // 윗부분
             for (let i = 0; i < 4; i++) {

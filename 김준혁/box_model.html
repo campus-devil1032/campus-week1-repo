@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Box Model Example</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 100px;
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid #333;
+            background-color: #f7f7f7;
+            box-sizing: border-box;
+        }
+
+        .box-detail {
+            /* 상단 내부여백 10px */
+            padding-top: 10px;
+            /* 우측 내부여백 10px */
+            padding-right: 10px;
+            /* 하단 내부여백 10px */
+            padding-bottom: 10px;
+            /* 좌측 내부여백 10px */
+            padding-left: 10px;
+            /* 상단 외부여백 10px */
+            margin-top: 10px;
+            /* 우측 외부여백 10px */
+            margin-right: 10px;
+            /* 하단 외부여백 10px */
+            margin-bottom: 10px;
+            /* 좌측 외부여백 10px */
+            margin-left: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .box-detail-simple-1 {
+            /* 시계방향으로 위 오른쪽 아래 왼쪽 */
+            padding: 10px 15px 20px 25px;
+            border: 1px solid #ccc;
+        }
+
+        .box-detail-simple-2 {
+            /* 시계방향으로 위 오른쪽 아래 왼쪽 */
+            padding: 10px 40px;
+            border: 1px solid #999;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">Box Model Example</div>
+    <div class="box-detail">Box Detail Model Example</div>
+    <div class="box-detail-simple-1">Box Detail Simple 1 Model Example</div>
+    <div class="box-detail-simple-2">Box Detail Simple 2 Model Example</div>
+
+</body>
+
+</html>

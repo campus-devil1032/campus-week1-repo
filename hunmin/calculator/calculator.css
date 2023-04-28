@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    /* border-box는 테두리를 기준으로 크기를 정한다 */
+    color: white;
+}
+/* *는 css 전체 선택자로 모든 요소를 선택한다 */
+
+main{
+    width: 300px;
+}
+
+.button-wrap{
+    display: grid; 
+    /* css grid는 행과 열의 레이아웃 시스템 제공 */
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns는 열의 크기를 정의 (한 줄에 4개씩 모두 동일) */
+}
+
+input{
+    height: 70px;
+    outline: none;
+    width: 100%;
+    text-align: right;
+    border: none;
+    background: gray; 
+    /* 추후 색 변경 */
+    padding-right: 1rem;
+    font-size: 3rem;
+}
+
+button{
+    height: 70px;
+    outline: none;
+    background: black;
+    border: 1px solid #454448;
+    /* 추후 색 변경 */
+    font-size: 2rem;
+}
+
+button:nth-child(4n+2), button:last-child{
+    background-color: blue;
+    /* last-child는 제일 마지막 요소를 나타낸다, 맨 마지막 요소만 파랑 */
+}
+
+button:hover{
+    opacity: .5;
+}
+
+.ac{
+    grid-column: 1/4;
+    background: black;
+}
+
+.zero{
+    grid-column: 1/3;
+}

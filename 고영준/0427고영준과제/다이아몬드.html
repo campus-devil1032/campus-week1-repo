@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+    <script>
+        
+        let height = 6;
+
+        for (let i = 0; i < height; i+=1){
+            let row = '';
+            for (let f = height-1; f > i; f-=1){ 
+                row += ' ';
+            }
+            for (let f = 0; f < 2 * i + 1; f+=1) { 
+                row += '*';
+            }
+        
+        console.log(row);
+        } 
+
+        let high = 5;
+    
+        for (let i = 0; i < high; i+=1){ 
+            let row = '';
+            for (let f = 0; f < i+1; f+=1){
+                row += ' ';
+            }
+            for (let f = 0; f < 2*(4-i)+1  ; f+=1){ 
+                row += '*';
+            }
+        console.log(row);
+        } 
+
+    </script>
+</body>
+</html>

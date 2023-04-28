@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>도형 5</title>
+    </head>
+    
+    <body>
+        <h3>정삼각형 출력</h3>
+        <script>
+         let star = prompt ("숫자를 입력하세요");
+         for (let i = 0; i<star; i++) {
+            let space = "";
+            for (let j = star; j > i+1; j--){
+                space +='&nbsp;'
+            }
+            for (let j = 0; j<(2*i)+1; j++) {
+                space += "*";
+            }
+            document.write(space + "<br>");
+        }
+        </script>
+    </body>
+</html>

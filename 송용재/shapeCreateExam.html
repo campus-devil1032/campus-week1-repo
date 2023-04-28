@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도형만들기</title>
+    <style>
+        h1, .btnDiv{ text-align: center; }
+        .btnDiv .btn{
+            display: inline-block;
+            width: 180px;
+            height: 40px;
+            font-size: small;
+            font-weight: bold;
+            border: 1px solid gray;
+            border-radius: 2px;
+            color: gray;
+            background-color: #e9ecef;
+        }
+        .btn:hover{
+            color: black;
+            cursor: pointer;
+        }
+        input{margin-bottom: 5px;}
+
+        #drawDiv{ width: 150px; margin: 0 auto; }
+    </style>
+    
+</head>
+<body>
+    <h1>도형만들기</h1>
+    <div class="btnDiv">
+        <input type="button" class ="btn" value="정삼각형 만들기" id="eqTRG">
+        <input type="button" class ="btn" value="역삼각형 만들기" id="reverse_eqTRG">
+        <input type="button" class ="btn" value="마름모 만들기" id="dia">
+        <br>
+        <input type="button" class ="btn" value="직사각형 만들기" id="rtg">
+        <input type="button" class ="btn" value="직각삼각형 만들기" id="rTRG">
+        <input type="button" class ="btn" value="거꾸로 직각삼각형 만들기" id="reverseTRG">
+        <input type="button" class ="btn" value="별 만들기" id="star">
+    </div>
+    <br><br><br>
+    <div id="drawDiv"> </div>
+
+    <script>
+        const draw = document.getElementById("drawDiv");
+        // const sp = document.createElement("span");
+        // const txt = document.createTextNode("*");
+
+        document.getElementById("eqTRG").onclick = function(){
+            draw.innerHTML='<span> </span>';
+            for(let i=0; i<10; i++){
+                for(let j=0; j<10-i; j++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("\u00a0");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }//변수 j 포문
+                for(let k=0; k<2*i+1;k++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("*");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }
+                let br = document.createElement("br");
+                draw.appendChild(br);
+            }//for문(변수 i) 끝
+        };//정삼각형 만들기 끝
+
+        document.getElementById("reverse_eqTRG").onclick = function(){
+            draw.innerHTML='<span> </span>';
+            for(let i=10; i>0;i--){
+                for(let k=0; k<10-i; k++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("\u00a0");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }
+                for(let j=0; j<2*i-1; j++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("*");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }
+                let br = document.createElement("br");
+                draw.appendChild(br);
+            }
+        };//역삼각형 만들기 끝
+
+        document.getElementById("dia").onclick = function(){
+            draw.innerHTML='<span> </span>';
+            for(let i=0; i<6; i++){//다이아 윗부분 만들기(1~6행)
+                for(let j=0; j<6-i; j++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("\u00a0");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }//변수 j 포문
+                for(let k=0; k<2*i+1;k++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("*");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }
+                let br = document.createElement("br");
+                draw.appendChild(br);
+            }
+            
+            for(let i=5; i>0;i--){//다이아 아랫부분 만들기(7~10행)
+                for(let k=0; k<7-i; k++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("\u00a0");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }
+                for(let j=0; j<2*i-1; j++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("*");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }
+                let br = document.createElement("br");
+                draw.appendChild(br);
+            }
+        };//마름모 만들기 끝
+        
+        document.getElementById("rtg").onclick = function(){
+            // let draw = document.getElementById("drawDiv");
+            draw.innerHTML='<span> </span>'; // div 내용 초기화
+            for(let i=0; i<10; i++){
+                for(let j=0; j<10; j++){
+                    // document.write('*'); //이렇게 하면 document가 갱신되어서 기존의 내용이 사라짐
+                    // document.getElementById('draw').innerHTML="*" //기존의 텍스트만 바뀜
+                    // 상속을 시켜서 기존 내용을 유지시켜줘야 함
+                    let sp = document.createElement("span");    //document에 span태그(요소)를 만들어준다(createElement)
+                    let txt = document.createTextNode("*");  //*이라는 텍스트를 만든다.
+                    sp.appendChild(txt); //txt를 갱신하는게 아니라 기존 텍스트를 상속해서 계속 글을 쓰게한다.
+                    
+                    //let draw = document.getElementById("drawDiv");
+                    draw.appendChild(sp);
+                }
+                // document.write('<br>');
+                // document.getElementById('draw').innerHTML = "<br>"
+                let br = document.createElement("br");  // 줄바꿈용 br 태그 생성
+                draw.appendChild(br);
+            }
+        };//직사각형 만들기 끝
+
+        document.getElementById("rTRG").onclick = function(){
+            draw.innerHTML='<span> </span>'; // div 내용 초기화
+            for(let i=1; i<=10; i++){
+                for(let j=0; j<i; j++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("*");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }
+                let br = document.createElement("br");
+                draw.appendChild(br);
+            }
+        };//직각삼각형 만들기
+
+        document.getElementById("reverseTRG").onclick = function(){
+            draw.innerHTML='<span> </span>';
+            for(let i=10; i>0; i--){
+                for(let j=0; j<i; j++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("*");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }
+                let br = document.createElement("br");
+                draw.appendChild(br);
+            }
+        };//거꾸로 직각삼각형 만들기
+
+        //별 그리기 (총 19행)
+        document.getElementById("star").onclick = function(){
+            draw.innerHTML='<span> </span>';
+            for(let i=0; i<14; i++){ // 1~5행 그리기
+                if(i<5){
+                    for(let j=0; j<14-i; j++){
+                        let sp = document.createElement("span");
+                        let txt = document.createTextNode("\u00a0");
+                        sp.appendChild(txt);
+
+                        draw.appendChild(sp);
+                    }//변수 j 포문
+                    for(let k=0; k<2*i+1;k++){
+                        let sp = document.createElement("span");
+                        let txt = document.createTextNode("*");
+                        sp.appendChild(txt);
+
+                        draw.appendChild(sp);
+                    }
+                    let br = document.createElement("br");
+                    draw.appendChild(br);
+                }
+            }//for문(변수 i) 끝
+
+            for(let i=14; i>0;i--){ //6~10행 그리기
+                if(i>9){
+                    for(let k=0; k<14-i; k++){
+                        let sp = document.createElement("span");
+                        let txt = document.createTextNode("\u00a0");
+                        sp.appendChild(txt);
+
+                        draw.appendChild(sp);
+                    }
+                    for(let j=0; j<2*i-1; j++){
+                        let sp = document.createElement("span");
+                        let txt = document.createTextNode("*");
+                        sp.appendChild(txt);
+
+                        draw.appendChild(sp);
+                    }
+                    let br = document.createElement("br");
+                    draw.appendChild(br);
+                }
+            }
+
+            for(let i=11; i<=14; i++){ // 11~14행 그리기
+                for(let j=0; j<14-i; j++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("\u00a0");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }//변수 j 포문
+                for(let k=0; k<2*i-1;k++){
+                    let sp = document.createElement("span");
+                    let txt = document.createTextNode("*");
+                    sp.appendChild(txt);
+
+                    draw.appendChild(sp);
+                }
+                let br = document.createElement("br");
+                draw.appendChild(br);
+            }//for문(변수 i) 끝
+            
+            for(let i=14; i>0;i--){ //15~19행 그리기
+                if(i<=5){
+                    for(let k=0; k<=14-i; k++){
+                        let sp = document.createElement("span");
+                        let txt = document.createTextNode("\u00a0");
+                        sp.appendChild(txt);
+
+                        draw.appendChild(sp);
+                    }
+                    for(let j=0; j<2*i-1; j++){
+                        let sp = document.createElement("span");
+                        let txt = document.createTextNode("*");
+                        sp.appendChild(txt);
+
+                        draw.appendChild(sp);
+                    }
+                    let br = document.createElement("br");
+                    draw.appendChild(br);
+                }
+            }
+        };// 별 만들기 끝
+
+
+    </script>
+</body>
+</html>

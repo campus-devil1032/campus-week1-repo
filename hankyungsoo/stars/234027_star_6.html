@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>별 찍기 6</title>
+</head>
+
+<body>
+
+  <script> /*별 대가리*/
+    let k = 15;
+    for (let i = 1; i <= k; i++) {
+      let stars = "";
+      for (let j = 1; j <= k - i + (k * 2); j++) {
+        stars += "&nbsp&nbsp"; // 공백 추가
+      }
+      for (let j = 1; j <= 2 * i - 1; j++) {
+        stars += "*";
+      }
+      document.write(stars + "<br>");
+    }
+  </script>
+
+  <script>  /*별 몸통*/
+    let m = 45
+    for (let i = 1; i + 30 <= m; i++) {
+      let stars = "";
+      for (let j = 1; j <= i; j++) {
+        stars += "&nbsp&nbsp"; // 공백 추가
+      }
+      for (let j = 1; j <= 2 * m - 2 * i - 1; j++) {
+        stars += "*";
+      }
+      document.write(stars + "<br>");
+    }
+  </script>
+
+
+  <script> /*별 다리 오른쪽*/
+    let x = 15;
+    for (let i = 0; i <= x; i++) {
+      let stars = "";
+
+      for (let j = 1; j <= x - i; j++) {
+        stars += "&nbsp&nbsp"; // 공백 추가
+      }
+
+      for (let j = 1; j <= 2 * x - 2 * i - 1; j++) {
+        stars += "*";
+      }
+      for (let j = 1; j <= i; j++) {
+        stars += "&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"; // 공백 추가
+      }
+      for (let j = 1; j <= 2 * x - 2 * i - 1; j++) {
+        stars += "*";
+      }
+      document.write(stars + "<br>");
+    }
+  </script>
+</body>
+
+</html>

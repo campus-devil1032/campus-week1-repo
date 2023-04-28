@@ -10,23 +10,26 @@
     <script>
 
 
+// 역삼각형
+const star1 = 10;
+for (let i = 0; i < star1; i++) {
+   let dot = '';
+   for (let j = 0; j < i; j++) {
+      dot += " ";
+   }
+   for (let a = star1 * 2 - 1; a > 2 * i; a--) {
+            dot += '*';	
+			
+		}
+		    console.log(dot);
+}
+
+console.log("----------------------");
+
 // 정삼각형
 
 
-// for (let i = 0; i < star2; i++) {
-//    let dot = " ";
-//    for(let j = 0; j < star2 - 1; j++) {
-//       dot += " ";
-
-//    }
-//    for(let a = 10; a <= 2 * i + 1; a--) {
-//       dot += "*";
-//    }
-//    console.log(dot);
-
-// }
-
-const star2 = 10;
+let star2 = 10;
 
             for (let i = 0; i < star2; i++) {
                 let dot = '';
@@ -46,41 +49,10 @@ const star2 = 10;
 	console.log("------------------------------------------");
 
 
-for(let i = 0; i < 10; i++)  {
-   let dot = " ";
-    for(let j = 0; j < 10; j++)  {
-            dot += "*";
-    }
-    dot +='\n' ;
-    console.log(dot);
-}
-
-
-// let height = 10;
-
-// for (let i = 0;  i <= height; i++) {
-//    let star = '';
-//    for (let j = 0; j <= i - 1; j++) {
-//       star = star + ' ';
-//    } 
-//    for (let a = 0; a <  i * 2 + 1; a++) {
-//       star = star + '*';
-//    }
-
-//    for (let b = 0; b >  i * 2 + 1; b--) {
-//       star = star + '*';
-//    }
-   
 
 
 
-//    console.log(star);
-
-// }
-
-
-
-
+// 마름모
 
    for (let j = 1; j <= 11; j++) {
 
@@ -253,7 +225,7 @@ for(let i = 0; i < 10; i++)  {
 console.log("----------------------------");
 
 
-// 스타별찍기 과제 
+// 반 삼각형
 for (let i = 1; i <= 1; i++) {
     let starCount1 = '';
        for (let j = 1; j <= 10; j++) {
@@ -264,7 +236,7 @@ for (let i = 1; i <= 1; i++) {
 
 console.log("-----------------------------");
 
-// 스타별찍기 과제 
+// 사각형
 let tenStar = "**********"
 let key = 15;
 switch (key > 1) {

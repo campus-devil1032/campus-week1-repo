@@ -237,8 +237,13 @@ for (let i = 1; i <= 1; i++) {
 console.log("-----------------------------");
 
 // 사각형
-let tenStar = "**********"
-let key = 15;
+let tenStar = "";
+
+for (let i = 0; i < 15; i++) {
+   tenStar += "*";
+}
+
+let key = 10;
 switch (key > 1) {
    
     case key > 2:
@@ -267,6 +272,57 @@ switch (key > 1) {
 }
 
 console.log("-----------------------------");
+
+
+// 별 모양형
+
+
+let star3 = 15;
+
+    for (let i = 1; i <= star3; i++) {
+      let dot = "";
+      for (let j = 1; j <= star3 - i + (star3 * 2); j++) {
+         dot += " "; 
+      }
+      for (let j = 1; j <= 2 * i - 1; j++) {
+         dot += "*";
+      }
+      console.log(dot);
+    }
+
+    let star4 = 45
+    for (let i = 1; i + 30 <= star4; i++) {
+      let dot = "";
+      for (let j = 1; j <= i; j++) {
+         dot += " "; 
+      }
+      for (let j = 1; j <= 2 * star4 - 2 * i - 1; j++) {
+         dot += "*";
+      }
+      console.log(dot);
+    }
+
+
+    let star5 = 15;
+    for (let i = 0; i <= star5; i++) {
+      let dot = "";
+
+      for (let j = 1; j <= star5 - i; j++) {
+         dot += " "; 
+      }
+
+      for (let j = 1; j <= 2 * star5 - 2 * i - 1; j++) {
+         dot += "*";
+      }
+      for (let j = 1; j <= i; j++) {
+         dot += "       "; 
+      }
+      for (let j = 1; j <= 2 * star5 - 2 * i - 1; j++) {
+         dot += "*";
+      }
+      console.log(dot);
+    }
+
 
 
     </script>

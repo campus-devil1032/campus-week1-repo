@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="kr-KO">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="intA">
+    <input type="text" id="intB">
+
+    <script>
+        let calctype = 0;
+        let result = "";
+        let resultcount = 0;
+    </script>
+
+    <div>
+        <button onclick="calctype=1">+</button>
+        <button onclick="calctype=2">-</button>
+        <button onclick="calctype=3">*</button>
+        <button onclick="calctype=4">/</button>
+        <button onclick="calctype=5">mod</button>
+        <button onclick="calc(calctype,'intA','intB')" id="equal">=</button>
+        <button onclick="clear()" id="equal">clear</button>
+    </div>
+    <div id="div1">
+        
+    </div>
+    <script>
+        /*
+        function addElement(a) {
+            // create a new div element
+            const newDiv = document.createElement("p");
+
+            // and give it some content
+            const newContent = document.createTextNode(a);
+
+            // add the text node to the newly created div
+            newDiv.appendChild(newContent);
+
+            const currentDiv = document.getElementById("div1");
+            document.body.insertBefore(newDiv, currentDiv);
+        }
+        */
+        function calc(type, c, d) {
+            let r = 0;
+            let a = Number(document.getElementById(c).value);
+            let b = Number(document.getElementById(d).value);
+            if (type === 1) {
+                r = a + b;
+                alert(r);
+            } else if (type === 2) {
+                r = a - b;
+                alert(r);
+            } else if (type === 3) {
+                r = a * b;
+                alert(r);
+            } else if (type === 4) {
+                r = a / b;
+                alert(r);
+            } else if (type === 5) {
+                r = a % b;
+                alert(r);
+            } else {
+                alert("error");
+            }
+            result = r + " " + result 
+            resultcount += 1;
+            /*addElement(r);*/
+            document.getElementById("div1").innerHTML=result;
+
+        }
+        function clear() {
+            /*const myNodelist = document.querySelectorAll("p");*/
+            resultcount = 0;
+            result = "";
+            /*
+            for (let i = 0; i < myNodelist.length; i++) {
+                myNodelist[i].empty();
+            }*/
+            document.getElementById('div1').innerHTML="";
+        }
+    </script>
+</body>
+
+</html>

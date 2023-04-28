@@ -10,7 +10,77 @@
     <script>
 
 
-// 스타 별찍기 과제
+// 정삼각형
+
+
+// for (let i = 0; i < star2; i++) {
+//    let dot = " ";
+//    for(let j = 0; j < star2 - 1; j++) {
+//       dot += " ";
+
+//    }
+//    for(let a = 10; a <= 2 * i + 1; a--) {
+//       dot += "*";
+//    }
+//    console.log(dot);
+
+// }
+
+const star2 = 10;
+
+            for (let i = 0; i < star2; i++) {
+                let dot = '';
+                for (let j = star2-1; j > i; j--) {
+                  dot += ' ';
+                }
+			
+		    for (let a = 0; a < 2*i+1; a++) {
+            dot += '*';	
+			
+		}
+		    console.log(dot);
+               
+}
+
+		
+	console.log("------------------------------------------");
+
+
+for(let i = 0; i < 10; i++)  {
+   let dot = " ";
+    for(let j = 0; j < 10; j++)  {
+            dot += "*";
+    }
+    dot +='\n' ;
+    console.log(dot);
+}
+
+
+// let height = 10;
+
+// for (let i = 0;  i <= height; i++) {
+//    let star = '';
+//    for (let j = 0; j <= i - 1; j++) {
+//       star = star + ' ';
+//    } 
+//    for (let a = 0; a <  i * 2 + 1; a++) {
+//       star = star + '*';
+//    }
+
+//    for (let b = 0; b >  i * 2 + 1; b--) {
+//       star = star + '*';
+//    }
+   
+
+
+
+//    console.log(star);
+
+// }
+
+
+
+
 
    for (let j = 1; j <= 11; j++) {
 

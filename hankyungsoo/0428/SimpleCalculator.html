@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko-kr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator</title>
+</head>
+
+<body>
+<h1>계산기</h1>
+<h2>어려운 계산은 할 수 없어요</h2>
+입력값 1 <input type="text" id="num1">
+<br>
+입력값 2 <input type="text" id="num2">
+<br><br>
+<style>
+    .my-button {
+        background-color: greenyellow;
+        color: black;
+        font-size: 15px;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function add() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        if (isNaN(num1) || isNaN(num2)) {
+            document.getElementById("result").innerHTML = "입력값을 입력하세요";
+        } else {
+            let result = num1 + num2;
+            document.getElementById("result").innerHTML = result;
+        }
+    }
+
+    function subtract() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        if (isNaN(num1) || isNaN(num2)) {
+            document.getElementById("result").innerHTML = "입력값을 입력하세요";
+        } else {
+            let result = num1 - num2;
+            document.getElementById("result").innerHTML = result;
+        }
+    }
+
+    function multiply() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        if (isNaN(num1) || isNaN(num2)) {
+            document.getElementById("result").innerHTML = "입력값을 입력하세요";
+        } else {
+            let result = num1 * num2;
+            document.getElementById("result").innerHTML = result;
+        }
+    }
+
+    function divide() {
+        let num1 = parseFloat(document.getElementById("num1").value);
+        let num2 = parseFloat(document.getElementById("num2").value);
+        if (isNaN(num1) || isNaN(num2)) {
+            document.getElementById("result").innerHTML = "입력값을 입력하세요";
+        } else {
+            let result = num1 / num2;
+            document.getElementById("result").innerHTML = result;
+        }
+    }
+</script>
+
+<button class="my-button" onclick="add()">+</button>
+<button class="my-button" onclick="subtract()">-</button>
+<button class="my-button" onclick="multiply()">X</button>
+<button class="my-button" onclick="divide()">÷</button>
+
+<br><br>
+계산결과 : <span id="result"></span>
+
+</body>
+</html>

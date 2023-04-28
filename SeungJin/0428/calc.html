@@ -24,7 +24,7 @@
         <button onclick="calctype=4">/</button>
         <button onclick="calctype=5">mod</button>
         <button onclick="calc(calctype,'intA','intB')" id="equal">=</button>
-        <button onclick="clear()" id="equal">clear</button>
+        <button onclick="resta()"id="remove">clear</button>
     </div>
     <div id="div1">
         
@@ -73,15 +73,11 @@
             document.getElementById("div1").innerHTML=result;
 
         }
-        function clear() {
-            /*const myNodelist = document.querySelectorAll("p");*/
+        function resta() {
+            alert("실행");
             resultcount = 0;
             result = "";
-            /*
-            for (let i = 0; i < myNodelist.length; i++) {
-                myNodelist[i].empty();
-            }*/
-            document.getElementById('div1').innerHTML="";
+            document.getElementById("div1").innerHTML=result;
         }
     </script>
 </body>

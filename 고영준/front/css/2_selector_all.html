@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* 요소 선택자 */
+      h1 {
+        color: blue;
+      }
+
+      /* 클래스 선택자 */
+      .intro {
+        background-color: yellow;
+      }
+
+      /* ID 선택자 */
+      #main {
+        font-size: 24px;
+      }
+
+      /* 자식 선택자 */
+      div > p {
+        color: red;
+      }
+
+      /* 인접 형제 선택자 */
+      h1 + p {
+        font-size: 16px;
+      }
+
+      /* 일반 형제 선택자 */
+      h1 ~ p {
+        color: green;
+      }
+
+      /* 속성 선택자 */
+      [href] {
+        color: purple;
+      }
+
+      /* 속성 값 선택자 */
+      [href='https://example.com'] {
+        font-size: 20px;
+      }
+
+      /* 시작 부분 일치 선택자 */
+      [class^='para'] {
+        font-weight: bold;
+      }
+
+      /* 종료 부분 일치 선택자 */
+      [class$='para'] {
+        font-style: italic;
+      }
+
+      /* 포함하는 부분 일치 선택자 */
+      [class*='para'] {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Welcome to my website!</h1>
+      <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>일반 텍스트가 포함된 단락입니다.</p>
+      <p>일반 텍스트가 포함된 또 다른 단락입니다.</p>
+      <p class="paragraph">클래스 이름에 "para"가 있는 단락입니다.</p>
+      <p class="para">클래스 이름에 "para"가 있는 또 다른 단락입니다.</p>
+      <a href="https://example.com">Link to example.com</a>
+    </div>
+  </body>
+</html>

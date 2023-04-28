@@ -1,57 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>계산기</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
-    <style>
-        button {
-            margin: 20px;
-            width: 100px;
-            height: 100px;
-        }
-        .d-grid {
-            border: 1px solid rgb(0, 0, 0);
-            width: 600px;
-        }
-
-
-        
-
-        /* .container {
-            position: relative;
-        } */
-    </style>
-</head>
-<body>
-    <div class="container">
-        <header><h1>계산기</h1></header>
-        <section>
-            <div class="d-grid gap-2 d-md-block">
-            <button type="button" class="btn btn-primary btn-lg" onClick="window.location.reload();">Reset</button>
-            <button type="button" class="btn btn-primary btn-lg" id="minus">minus</button>
-            <button type="button" class="btn btn-primary btn-lg" id="divide">divide</button>
-            <button type="button" class="btn btn-primary btn-lg" id="plus">plus</button><br>
-            <button type="button" class="btn btn-primary btn-lg" id="seven">num7</button>
-            <button type="button" class="btn btn-primary btn-lg" id="eight">num8</button>
-            <button type="button" class="btn btn-primary btn-lg" id="nine">num9</button> <button type="button" class="btn btn-primary" id="multiple">multiple</button><br>
-            <button type="button" class="btn btn-primary btn-lg" id="four">num4</button>
-            <button type="button" class="btn btn-primary btn-lg" id="five">num5</button>
-            <button type="button" class="btn btn-primary btn-lg" id="six">num6</button><button type="button" class="btn btn-primary" id="zero">num0</button><br>
-            <button type="button" class="btn btn-primary btn-lg" id="one">num1</button>
-            <button type="button" class="btn btn-primary btn-lg" id="two">num2</button>
-            <button type="button" class="btn btn-primary btn-lg" id="three">num3</button> <button type="button" class="btn btn-primary" id="equal"> = </button><br>
-            </div>
-           
-            <h2 id="results">결과</h2>
-        </section>
-    </div>
-    
-
-    <script>
 const plus = document.getElementById('plus');
 const one = document.getElementById('one');
 const two = document.getElementById('two');
@@ -283,7 +229,3 @@ else {
 
 // display the result
 console.log(`${num3} ${operator} ${num2} = ${result}`);
-
-    </script>
-</body>
-</html>

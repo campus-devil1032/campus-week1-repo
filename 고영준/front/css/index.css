@@ -1,0 +1,128 @@
+/* css 기본 구문 
+선택자 {
+    속성: 값;
+    속성: 값:
+    속성: 값;
+} */
+
+
+/* 박스 모델 */
+.box {
+    width: 200px;
+    height: 100px;
+    padding: 1px solid black;
+    margin: 10px;
+}
+
+
+/* css 단위 
+px:픽셀 
+em:상위 요소의 글꼴 크기를 기준으로 상대적인 단위 
+rem:최상위 요소 (html)의 글꼴 크기를 기준으로 상대적인 단위
+&:상위 요소의 크기에 대한 비율을 나타내는 단위
+vh:뷰포트 세로 길이의 1/100
+vw:뷰포트 가로 길이의 1/100 */
+.box {
+    font-size: 16px;
+    width: 50%;
+    padding: 1em;
+    margin: 2rem;
+    height: 20vh;
+}
+
+/* px */
+.box {
+    width: 200px;
+    height: 100px;
+}
+
+/* em */
+body {
+    font-size: 16px; /* 기본 폰트 크기 설정 */
+}
+.wrapper {
+    width: 30em; /* em 단위 사용 */
+    margin: 0 auto; /* 가운데 정렬 */
+    background-color: #f2f2f2; /* 배경색 설정 */
+    padding: 1em; /* 여백 설정 */
+}
+h1 {
+    font-size: 2em; /* 부모 요소의 폰트 크기의 2배 */
+    margin-bottom: 0.5em; /* 아랴쪽 여백 */
+}
+p {
+    font-size: 1em; /* 부모 요소의 폰트 크기와 같게 설정 */
+    margin-bottom: 1em; /* 아래쪽 여백 */
+}
+/*
+<div class="wrapper">
+    <h1>Em Example</h1>
+    <p>CSS에서 em 단위를 사용하여 유연한 레이아웃을 만드는 예입니다.</p>
+    <p>em 단위를 사용하여 사용자가 선호하는 글?꼴 크기에 맞게 조정되는 레이아웃을 만들 수 있습니다.</p>
+</div> */
+
+
+/* rem */
+html {
+    font-size: 20px; /* 기본 폰트 크기 설정 */
+}
+.container {
+    font-size: 1.2rem; /* 루트 요소 폰트 크기의 1.2배 */
+}
+h1 {
+    font-size: 2em; /*부모 요소의 폰트 크기의 2배 */
+}
+p {
+    font-size: 1.5em;/* 부모 요소의 폰트 크기의 1.5배 */
+    margin-bottom: 1rem; /*루트 요소 폰트 크기의 1배 */
+}
+/*
+<div class="container"> 
+    <h1>Em and Rem Example</h1>
+    <p>CSS에서 em과 rem 단위를 함께 사용하는 예입니다.</p>
+    <p>em 및 rem 단위를 사용하여 글꼴 크기를 더 유연하게 만들고 상위 요소에 상대적으로 만들 수 있습니다.</p>
+</div> */
+
+
+/* % */
+.wrapper {
+    width: 80%; /* 부모 요소의 너비의 80% */
+    margin: 0 auto; /* 가운데 정렬 */
+    background-color: #f2f2f2;
+}
+.box {
+    width: 50%; /* 부모 요소의 너비의 50% */
+    height: 100px;
+    margin: 20px auto; /* 위아래 여백은 20px, 가운데 정렬 */
+}
+/*
+<div class="wrapper">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+</div> */
+
+
+/* vw, vh */
+.box {
+    width: 50vw; /* 뷰포트 너비의 50% */
+    height: 50vh; /* 뷰포트 높이의 50% */
+    background-color: #3498db;
+    color: #fff;
+    text-align: center; /* 가운데 정렬 */
+}
+/*
+<body>
+    <div class="box">50% Width and Height of Viewport</div>
+</body> */
+
+body {
+    font-size: 1.5vw; /*뷰포트 너비의 1.5% */
+}
+h1 {
+    font-size: 3vh; /* 뷰포트 높이의 3% */
+}
+/*
+<body>
+    <h1>뷰포트 단위 예시</h1>
+    <p>CSS에서 뷰포트 단위를 사용하여 반응형 레이아웃을 만드는 예입니다.</p>
+</body> */

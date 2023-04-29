@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"> 
+        <!-- hmtl 파일의 인코딩을 알려주는 태그 -->
+        <title>Calculator</title>
+        <link rel = "stylesheet" href = "calculator.css">
+        <!-- css stylesheet파일 연결하기 link는 외부 문서 연결시키는 태그 -->
+    </head>
+
+    <body>
+        <main>
+        <input type = "text" value = "0" disabled>
+        <!-- disabled는 input 요소가 비활성화됨을 명시 -->
+        <div class = "button-wrap">
+            <button data-type = "ac" class = "ac">AC</button>
+            <button data-type = "operator">÷</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button data-type = "operator">*</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button data-type = "operator">-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button data-type = "operator">+</button>
+            <button class = "zero">0</button>
+            <button>.</button>
+            <button data-type = "equals" class = "equals">=</button>
+        </div>
+    </main>
+        <script src = "calculator.js"></script>
+        <!-- js 연결 -->
+    </body>
+</html> 

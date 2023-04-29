@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>역피라미드</title>
+    </head>
+    <body>
+        <script>
+            let height=10;
+            for(let i =0; i< height;i++){
+                let row = '';
+                for(let j=0;j<i; j++){
+                    row+=' ';
+                }
+                for(let j=10; j>i*2+1; j--){
+                    row+='*';
+                }
+                console.log(row);
+            }
+            
+        </script>
+
+    </body>
+</html>

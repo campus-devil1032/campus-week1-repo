@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    .button-normal{
+        margin-right: 7px;
+        margin-left: 7px;
+        width: 50px;
+    }
+    /* 일반 버튼들의 이미지 */
+
+    .button-long{
+        margin-left: 7px;
+        width: 125px;
+    }
+    /*긴 버튼의 이미지*/
+</style>
+</head>
+<body>
+    <div>
+        <input id="console" type="text" style="width:260px" >
+        <!--입력한 숫자,연산자들을 보여주고, 계산을 이행할 콘솔창-->
+    </div><br>
+    <div>
+    <button class="button-normal" onclick="toconsole('7')">7</button>
+    <button class="button-normal" onclick="toconsole('8')">8</button>
+    <button class="button-normal" onclick="toconsole('9')">9</button>
+    <button class="button-normal" onclick="toconsole('/')">/</button><br><br>
+    <button class="button-normal" onclick="toconsole('4')">4</button>
+    <button class="button-normal" onclick="toconsole('5')">5</button>
+    <button class="button-normal" onclick="toconsole('6')">6</button>
+    <button class="button-normal" onclick="toconsole('*')">*</button><br><br>
+    <button class="button-normal" onclick="toconsole('1')">1</button>
+    <button class="button-normal" onclick="toconsole('2')">2</button>
+    <button class="button-normal" onclick="toconsole('3')">3</button>
+    <button class="button-normal" onclick="toconsole('-')">-</button><br><br>
+    <button class="button-normal" onclick="toconsole('.')">.</button>
+    <button class="button-normal" onclick="toconsole('0')">0</button>
+    <button class="button-normal" onclick="toconsole('%')">%</button>
+    <button class="button-normal" onclick="toconsole('+')">+</button><br><br>
+    <button class="button-long" onclick="reset()">C</button>
+    <button class="button-long" onclick="calculate()">=</button>
+    </div>
+    <!-- 버튼들의 뼈대 생성 + 버튼을 누르면, 누른 버튼의 값이 자바스크립트의 함수를 호출하도록-->
+    <script>
+        function toconsole(num) {
+            var console = document.getElementById("console");
+            console.value = console.value + num;
+        }
+        //버튼으로 입력받는 값들을 콘솔창에 표시하기 위한 함수
+        function calculate() {
+            var console = document.getElementById("console");
+            var result = eval(console.value);
+            var displayResult = document.getElementById("console");
+            displayResult.value = result;
+        }
+        //콘솔창에 표시된 값을 '='를 누르면 계산식이 콘솔창에 뜨도록 하기위한 함수
+        function reset() {
+            var console = document.getElementById("console");
+            console.value = "";
+            var displayResult = document.getElementById("result");
+            displayResult.value = "";
+        }
+        //'C'를 누르면 콘솔창이 비워지도록 하기위한 함수
+    </script>
+</body>
+</html>

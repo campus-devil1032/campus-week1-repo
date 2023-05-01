@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="Calculator_CSS.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class ="Calculator">
+    <form name="form">
+        <input type="text" name="output" readonly>
+        <input type="button" class="clear" value="AC" onclick="document.form.output.value=''">
+        <input type="button" class="operator" value="/" onclick="document.form.output.value+='/'">
+        <input type="button" value="1" onclick="document.form.output.value+='1'">
+        <input type="button" value="2" onclick="document.form.output.value+='2'">
+        <input type="button" value="3" onclick="document.form.output.value+='3'">
+        <input type="button" class="operator" value="*" onclick="document.form.output.value+='*'">
+        <input type="button" value="4" onclick="document.form.output.value+='4'">
+        <input type="button" value="5" onclick="document.form.output.value+='5'">
+        <input type="button" value="6" onclick="document.form.output.value+='6'">
+        <input type="button" class="operator" value="+" onclick="document.form.output.value+='+'">
+        <input type="button" value="7" onclick="document.form.output.value+='7'">
+        <input type="button" value="8" onclick="document.form.output.value+='8'">
+        <input type="button" value="9" onclick="document.form.output.value+='9'">
+        <input type="button" class="operator" value="-" onclick="document.form.output.value+='-'">
+        <input type="button" class="dot" value="." onclick="document.form.output.value+='.'">
+        <input type="button" value="0" onclick="document.form.output.value+='0'">
+        <input type="button" class="operator result" value="=" onclick="document.form.output.value=eval(document.form.output.value)"
+    >
+
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

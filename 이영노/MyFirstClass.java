@@ -5,20 +5,20 @@ public class MyFirstClass {
 	static void mulTipleCalc(int x) {
 		 for (int i = x; i <= x; i++) {
 		    	for (int j = 1; j < 10; j++) {
-		    		System.out.printf("%d´Ü %d * %d = %d%n", i, i, j, i * j);
+		    		System.out.printf("%dï¿½ï¿½ %d * %d = %d%n", i, i, j, i * j);
 		    	}
 		    }
 	}
 	
 	public static void main(String[] args) {
-		// ±¸±¸´ÜÀ» Ãâ·ÂÇÏ´Â ÄÚµå¸¦ ÇÏ³ª
-		// 1´ÜºÎÅÍ 9´Ü ±îÁö Ãâ·ÂÇÑ´Ù.
-		// Optional: À¯Àú¿¡°Ô ´Ü ¼ö¸¦ ÀÔ·Â¹Þ´Â´Ù.
-		//				ÀÌ°æ¿ì 1 ~ 999±îÁö ÀÔ·Â¸¸ À¯È£ÇÏ°Ô ¿¹¿ÜÃ³¸®¸¦ ÇÑ´Ù.
-		// Optional: ºñÁî´Ï½º ·ÎÁ÷ ºÐ¸® ÇØº¸¼¼¿ä. view ´Ü°ú ºñÁî´Ï½º ·ÎÁ÷ Å¬·¡½º¸¦ µû·Î »ý¼ºÇØ¼­ ºÐ¸®ÇØº¸¼¼¿©.
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½Úµå¸¦ ï¿½Ï³ï¿½
+		// 1ï¿½Üºï¿½ï¿½ï¿½ 9ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
+		// Optional: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â¹Þ´Â´ï¿½.
+		//				ï¿½Ì°ï¿½ï¿½ 1 ~ 999ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·Â¸ï¿½ ï¿½ï¿½È£ï¿½Ï°ï¿½ ï¿½ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ´ï¿½.
+		// Optional: ï¿½ï¿½ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ð¸ï¿½ ï¿½Øºï¿½ï¿½ï¿½ï¿½ï¿½. view ï¿½Ü°ï¿½ ï¿½ï¿½ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ø¼ï¿½ ï¿½Ð¸ï¿½ï¿½Øºï¿½ï¿½ï¿½ï¿½ï¿½.
 
 		Scanner number = new Scanner(System.in);  // Create a Scanner object
-	    System.out.println("ÀÔ·ÂÇÒ ¼ö¼ö´Ü ´Ü¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+	    System.out.println("ï¿½Ô·ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¼ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½.");
 	    String inputNumber = number.nextLine();
 	    int intNumber = Integer.parseInt(inputNumber);
 	    
@@ -26,11 +26,11 @@ public class MyFirstClass {
 	   
 	    
 	    
-		
+	//	
 //		for (int i = 1; i < 10; i++) {
 //			System.out.println(i);
 //			for (int j = 1; j < 10; j++) {
-//				System.out.printf("%d´Ü  %d*%d = %d%n", i, i, j, i * j);
+//				System.out.printf("%dï¿½ï¿½  %d*%d = %d%n", i, i, j, i * j);
 //			}
 //		}
 //		

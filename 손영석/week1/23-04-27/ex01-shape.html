@@ -15,6 +15,11 @@
         input {
             width: 200px;
         }
+
+        button {
+            width: 100px;
+            height: 30px;
+        }
     </style>
 
 </head>
@@ -24,29 +29,29 @@
         <h1>도형만들기</h1>
 
         <input type="number" id="shape1" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
-        <button onclick=tiltedTriangle(shape1());>도형1</button><br><br>
+        <button onclick=rightTriangle(shape1());>직각삼각형</button><br><br>
         <input type="number" id="shape2" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
-        <button onclick=square(shape2());>도형2</button><br><br>
+        <button onclick=square(shape2());>정사각형</button><br><br>
         <input type="number" id="shape3" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
-        <button onclick=triangle(shape3());>도형3</button><br><br>
+        <button onclick=triangle(shape3());>삼각형</button><br><br>
         <input type="number" id="shape4" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
-        <button onclick=reverseTriangle(shape4());>도형4</button><br><br>
+        <button onclick=reverseTriangle(shape4());>역삼각형</button><br><br>
         <input type="number" id="shape5" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요">
-        <button onclick=diamond(shape5());>도형5</button><br><br>
+        <button onclick=diamond(shape5());>다이아몬드</button><br><br>
         <!-- <input type="number" id="shape6" min="0" max="25" step="1" oninput="checkInput(event)" placeholder="원하는 높이를 입력하세요"> -->
-        <!-- <button onclick = star(shape6());>도형6</button><br><br> -->
+        <button onclick = star();>☆</button><br><br>
 
 
         <div>내용은 콘솔(F12)에 출력됩니다.</div>
 
     <script>
 
-        // 기울어진 삼각형
-        function tiltedTriangle(x) {
+        // 직각삼각형
+        function rightTriangle(height) {
             console.clear();
-            for (let i = 0; i < x; i++) {
-                let row = "*";
-                for (let j = 0; j < i; j++) {
+            for (let i = 0; i < height; i++) {
+                let row = "";
+                for (let j = 0; j < i + 1; j++) {
                     row += "*";
                 }
                 console.log(row);
@@ -54,11 +59,11 @@
         }
 
         // 정사각형
-        function square(x) {
+        function square(height) {
             console.clear();
-            for (let i = 0; i < x; i++) {
-                let row = "*";
-                for (let j = 0; j < x - 1; j++) {
+            for (let i = 0; i < height; i++) {
+                let row = "";
+                for (let j = 0; j < height; j++) {
                     row += "*";
                 }
                 console.log(row);
@@ -66,11 +71,11 @@
         }
 
         // 삼각형
-        function triangle(x) {
+        function triangle(height) {
             console.clear();
-            for (let i = 0; i < x; i++) {
+            for (let i = 0; i < height; i++) {
                 let row = "";
-                for (let j = 0; j < (x - i - 1); j++) {
+                for (let j = 0; j < (height - i - 1); j++) {
                     row += " ";
                 }
                 for (let k = 0; k < ((i * 2) + 1); k++) {
@@ -81,11 +86,11 @@
         }
 
         // 역삼각형
-        function reverseTriangle(x) {
+        function reverseTriangle(height) {
             console.clear();
-            for (let i = x; i >= 0; i--) {
+            for (let i = height; i >= 0; i--) {
                 let row = "";
-                for (let j = i; j < x; j++) {
+                for (let j = i; j < height; j++) {
                     row += " ";
                 }
                 for (let k = 1; k <= ((i * 2) - 1); k++) {
@@ -96,12 +101,12 @@
         }
 
         // 다이아몬드
-        function diamond(x) {
+        function diamond(height) {
             console.clear();
-            if (x % 2 === 0) {  // 입력값이 짝수일경우
-                for (let i = 0; i < x / 2; i++) {
+            if (height % 2 === 0) {  // 입력값이 짝수일경우
+                for (let i = 0; i < height / 2; i++) {
                     let row = "";
-                    for (let j = 0; j < (x - i - 1); j++) {
+                    for (let j = 0; j < (height - i - 1); j++) {
                         row += " ";
                     }
                     for (let k = 0; k < ((i * 2) + 1); k++) {
@@ -109,9 +114,9 @@
                     }
                     console.log(row);
                 }
-                for (let i = (x / 2) - 1; i >= 0; i--) {
+                for (let i = (height / 2) - 1; i >= 0; i--) {
                     let row = "";
-                    for (let j = i; j < x; j++) {
+                    for (let j = i; j < height; j++) {
                         row += " ";
                     }
                     for (let k = 1; k <= ((i * 2) - 1); k++) {
@@ -120,9 +125,9 @@
                     console.log(row);
                 }
             } else {    // 입력값이 홀수일경우
-                for (let i = 0; i < x / 2; i++) {
+                for (let i = 0; i < height / 2; i++) {
                     let row = "";
-                    for (let j = 0; j < (x - i - 1); j++) {
+                    for (let j = 0; j < (height - i - 1); j++) {
                         row += " ";
                     }
                     for (let k = 0; k < ((i * 2) + 1); k++) {
@@ -130,9 +135,9 @@
                     }
                     console.log(row);
                 }
-                for (let i = (x / 2) - 0.5; i >= 0; i--) {
+                for (let i = (height / 2) - 0.5; i >= 0; i--) {
                     let row = "";
-                    for (let j = i; j < x; j++) {
+                    for (let j = i; j < height; j++) {
                         row += " ";
                     }
                     for (let k = 1; k <= ((i * 2) - 1); k++) {
@@ -156,7 +161,7 @@
                 for (let k = 0; k < ((i * 2) + 1); k++) {
                     row += "*";
                 }
-                console.log(row);
+                console.log(" " + row);
             }
 
             // 중간부분
@@ -168,10 +173,29 @@
                 for (let k = 0; k < (i * 2) - 1; k++) {
                     row += "*";
                 }
-                console.log(row);
+                console.log(" " + row);
             }
 
-            // 아랫부분...................
+            // 아랫부분
+            for (let i = 0; i < 5; i++) {
+                let row = "";
+                // 왼쪽
+                for (let j = 0; j < (6 - i); j++) {
+                    row += " ";
+                }
+                for (let k = 0; k < 9 - (i * 2); k++) {
+                    row += "*";
+                }
+                // 오른쪽
+                for (let l = 0; l < 1 + (i * 6); l++) {
+                    row += " ";
+                }
+                for (let m = 0; m < 9 - (i * 2); m++) {
+                    row += "*";
+                }
+
+                console.log(row);
+            }
 
 
         }

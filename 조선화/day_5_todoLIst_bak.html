@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>할 일 목록</title>
+        <link rel="stylesheet" href="./src/todo_style.css" />
+        <!-- 스크립트를  head에 넣으니 enter 이벤트가 작동하지 않음 async / defer
+            https://velog.io/@anjaekk/JS-Script%EC%82%BD%EC%9E%85-%EC%9C%84%EC%B9%98head-body-async-defer-%EB%B9%84%EA%B5%90 -->
+        <script async type="text/javascript" src="js/todo.js"></script>       
+    </head>
+    <body>
+        <h2>해야 할 일</h2>
+        <input type="text" id="newTodo" placeholder="할 일을 적으세요..">
+        <button id="newTodoBTN" type="button" onclick="addTodo()">추가</button>
+
+        <ul id="todoList"></ul>
+    </body>
+
+</html>

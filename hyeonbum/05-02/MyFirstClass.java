@@ -22,7 +22,14 @@ public class MyFirstClass {
 		while (true) {
 			try {
 				dan = input.nextInt();
-				break;
+				if(dan>999)
+					System.out.println("1 ~ 999까지의 입력만 유효");
+				
+				else if(dan<1)
+					System.out.println("1 ~ 999까지의 입력만 유효");
+				else
+					break;
+				
 			}
 
 			catch (InputMismatchException ime) {

@@ -1,0 +1,78 @@
+.container{
+    margin:auto;
+    border:1px solid rgb(249, 249, 249);
+    height:600px;
+    width:440px;
+    border-radius:1%;
+    background-color: rgb(227, 227, 227);
+    box-shadow:  0px 0px 2px #656565
+}
+.screen{
+    display: inline-block;
+    margin: 2%;
+    border: 2px solid rgb(249, 249, 249);
+    height:150px;
+    width:420px;
+    border-radius:2%;
+    background-color: rgb(255, 255, 255);
+    box-shadow:  1px 1px 3px #c6c6c6;   
+    padding:0;   
+}
+
+.screen-expression{
+    display:block;
+    height:70px;
+    width:420px;
+    font-size:20px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space:nowrap;
+    text-align: right;
+    line-height: 70px;
+    font-color:rgb(132, 132, 132);
+}
+
+.screen-num{
+    display:block;
+    height:80px;
+    width:420px;
+    font-size:60px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space:nowrap;
+    text-align: right; 
+    line-height: 80px;
+}
+
+.btn{
+    width:420px;
+    height:480px;
+    margin:auto;
+    display:block;
+}
+
+.btn-1, .btn-2, .btn-3, .btn-4{
+    width:450px;
+    display:inline-block;
+    margin: auto;
+
+}
+button{
+    line-height: 95px;
+    vertical-align: middle;
+    text-align: center;
+    margin:5px 2px;
+    display:inline-block;
+    border:1px solid rgb(239, 239, 239);
+    height: 95px;
+    width:95px;
+    border-radius:10%;
+    background-color: rgb(249, 249, 249);
+    box-shadow:  1px 1px 1px #c6c6c6;
+    font-size: 17px;
+}
+
+button:hover{
+    background-color: rgb(244, 244, 244);
+    box-shadow:  2px 2px 6px #c6c6c6
+}

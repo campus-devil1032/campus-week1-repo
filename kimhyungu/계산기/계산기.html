@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calcul.css">
+    <title>계산기</title>
+   </head> 
+   <body>
+    
+ <div class="calculator">
+    <form name="hgd">
+        <input type="text" name="output">
+        <input type="button" class="clear" value="c" onclick="document.hgd.output.value=''">
+        <input type="button" class="oprator" value="/"onclick="document.hgd.output.value+='/'">
+        <input type="button" value="7" onclick="document.hgd.output.value+='7'">
+        <input type="button" value="8" onclick="document.hgd.output.value+='8'">
+        <input type="button" value="9" onclick="document.hgd.output.value+='9'">
+        <input type="button" value="-" onclick="document.hgd.output.value+='-'">
+        <input type="button" value="4" onclick="document.hgd.output.value+='4'">
+        <input type="button" value="5" onclick="document.hgd.output.value+='5'">
+        <input type="button" value="6" onclick="document.hgd.output.value+='6'">
+        <input type="button" value="+" onclick="document.hgd.output.value+='+'">
+        <input type="button" value="1" onclick="document.hgd.output.value+='1'">
+        <input type="button" value="2" onclick="document.hgd.output.value+='2'">
+        <input type="button" value="3" onclick="document.hgd.output.value+='3'">
+        <input type="button" value="*" onclick="document.hgd.output.value+='*'">
+        <input type="button" class="zero" value="0" onclick="document.hgd.output.value+=0">
+        <input type="button" value="." onclick="document.hgd.output.value+='.'">
+        <input type="button" value="=" onclick="document.hgd.output.value=eval(document.hgd.output.value)">
+        
+    </form>
+</div>
+
+   </body>
+</html>

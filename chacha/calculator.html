@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#adder").click(function () {
+                $("p").after("<p>Hello World!</p>");
+            });
+            $("#hider-calculator").click(() => {
+                $("div").hide()
+                $("div").forms1.value="0"();
+            });
+            $("#display-calculator").click(() => {
+                $("div").show()
+            });
+
+        });
+        $('ul > li')
+    </script>
+</head>
+
+<body>
+    <!--계산기 시작 ############forms1번에 저장##############
+숫자 및 연산자 버튼을 눌러 계산을 수행하는 기능
+연산 결과를 화면에 표시하는 기능
+클리어 버튼을 통해 화면을 초기화하는 기능-->
+    <div id ="calculator"style="display: none">
+        <form name="forms1">
+            <input type="text" name="result" readonly>
+            <input type="button" value="C" onclick="document.forms1.result.value=''">
+            <input type="button" value="÷" onclick="document.forms1.result.value+='/'">
+            <input type="button" value="7" onclick="document.forms1.result.value+='7'">
+            <input type="button" value="8" onclick="document.forms1.result.value+='8'">
+            <input type="button" value="9" onclick="document.forms1.result.value+='9'">
+            <input type="button" value="×" onclick="document.forms1.result.value+='*'">
+            <input type="button" value="4" onclick="document.forms1.result.value+='4'">
+            <input type="button" value="5" onclick="document.forms1.result.value+='5'">
+            <input type="button" value="6" onclick="document.forms1.result.value+='6'">
+            <input type="button" value="-" onclick="document.forms1.result.value+='-'">
+            <input type="button" value="1" onclick="document.forms1.result.value+='1'">
+            <input type="button" value="2" onclick="document.forms1.result.value+='2'">
+            <input type="button" value="3" onclick="document.forms1.result.value+='3'">
+            <input type="button" value="+" onclick="document.forms1.result.value+='+'">
+            <input type="button" value="0" onclick="document.forms1.result.value+='0'">
+            <input type="button" value="." onclick="document.forms1.result.value+='.'">
+            <input type="button" value="＝" onclick="document.forms1.result.value=eval(document.forms1.result.value)">
+        </form>
+    </div>
+    <!--계산기 끝-->
+    <button id="display-calculator">계산기 보이기</button>
+    <button id="hider-calculator">계산기 숨기기</button>
+
+
+</body>
+
+</html>

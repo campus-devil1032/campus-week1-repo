@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- j쿼리 가져오기  -->
+    <script>
+        //2번째꺼시작
+        //제이쿼리사용
+        $.getJSON('https://api.openweathermap.org/data/2.5/weather?q=Seoul,kr&appid=46b55a9f61cc588200575a3dda8e3069&units=metric',
+            function (WeatherResult) {
+                //기온출력
+                $('.SeoulNowtemp').append(WeatherResult.main.temp)+"도";
+                $('.SeoulLowtemp').append(WeatherResult.main.temp_min);
+                $('.SeoulHightemp').append(WeatherResult.main.temp_max);
+                $('.Seoulhumidity').append(WeatherResult.main.humidity);
+
+                //날씨아이콘출력
+                //WeatherResult.weater[0].icon
+                var weathericonUrl =
+                    '<img src= "http://openweathermap.org/img/wn/'
+                    + WeatherResult.weather[0].icon +
+                    '.png" alt="' + WeatherResult.weather[0].description + '"/>'
+
+                $('.SeoulIcon').html(weathericonUrl);
+            });
+//2번쨰꺼 끝
+
+    </script>
+</head>
+
+<body>
+   <div style="background-color : rgb(101, 178, 255); padding : 40px;color : #fff; height : 500px">
+
+    <span>현재날씨///</span>
+    <span class="nowtime"></span>
+    <h3>경기도</h3>
+    <h3 class="SeoulIcon"></h3>
+    <h3 class="SeoulNowtemp">현재기온:</h3>
+    <h3 class="SeoulLowtemp">최저기온:</h3>
+    <h3 class="SeoulHightemp">최대기온:</h3>
+    <h3 class="Seoulhumidity">습기:</h3>%
+    
+        <div style="float : left;">
+            
+            <div class="weather_icon"></div>
+        </div><br>    
+    </div>
+</body>
+
+</html>

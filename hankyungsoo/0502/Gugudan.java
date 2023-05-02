@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Gugudan {
@@ -30,6 +29,22 @@ public class Gugudan {
 
         GugudanTable gugudanTable = new GugudanTable(n);
         gugudanTable.print();
+
+    }
+}
+
+class GugudanTable {
+
+    int number;
+
+    public GugudanTable(int number) {
+        this.number = number;
+    }
+
+    public void print() {
+        for (int i = 1; i <= 9; i++) {
+            System.out.println(number + " X " + i + " = " + number * i);
+        }
 
     }
 }

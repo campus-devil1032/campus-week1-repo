@@ -1,0 +1,60 @@
+/* 전체 박스 */
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+body{
+    font-family: 'Gamja Flower', monospace;
+}
+.wrapper{
+    width:600px;
+    min-height: 350px;
+
+    /* 오른쪽 하단에만 이미지 넣기 : https://stackoverflow.com/questions/7729652/how-to-position-background-image-in-bottom-right-corner-css */
+    background-color: #7fc3f2;
+    background-image: url(../img/bonobono.jpeg);
+    background-position: right bottom;
+    background-size: 35%;
+    background-repeat: no-repeat;
+
+    margin:auto;
+    padding: 10px 10px 30px 10px;
+}
+
+.wrapper h2, .wrapper h3{
+    text-align: center;
+}
+
+.inputAbtn{
+    text-align: center;
+}
+
+#newTodo,#newTodoBTN{
+    height: 2em;
+    border:solid 2px #41403E;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
+}
+
+ul, li{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul{
+    width: 500px;
+    min-height: 20px;
+    margin: auto;
+    background-color:rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+#compliteList .checkbox:checked{
+    /* appearance: none;
+    width:16px;
+    height: 16px;
+    background-image: url(../img/seashell.png); */
+}

@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <title>태헌 계산기 만들기 도전!</title>
+    <style>
+        .display {
+            border: 2px solid black;
+            border-radius: 10px;
+            text-align: right;
+            height: 40px;
+            width: 223px;
+            background-color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 23px;
+            margin-bottom: 6px;
+            margin-left: 10px;
+            padding-right: 15px;
+            padding-left: 10px;
+            padding-top: 20px;
+            display: block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .clear {
+            border-radius: 10px;
+            text-align: center;
+            height: 50px;
+            width: 252px;
+            margin: 10px;
+            background-color: #fffaee;
+            font-size: 20px;
+        }
+
+        .box {
+            border-radius: 10px;
+            height: 50px;
+            margin: 10px;
+            background-color: #ffffff;
+        }
+
+        .box>button {
+            width: 60px;
+            height: 50px;
+            border-radius: 10px;
+            cursor: pointer;
+            outline: none;
+            background-color: beige;
+            font-size: 20px;
+        }
+
+        .box>.func {
+            background-color: bisque;
+        }
+
+        .box>.enter {
+            background-color: rgb(255, 226, 183);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cal">
+        <div class="display">
+            &nbsp;&nbsp;
+        </div>
+        <dic class="cal_button">
+            <button value="ac" class="clear">A/C</button>
+            <div class="box">
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button value="operator" class="func">+</button>
+            </div>
+            <div class="box">
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button value="operator" class="func">-</button>
+            </div>
+
+            <div class="box">
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button value="operator" class="func">*</button>
+            </div>
+            <div class="box">
+                <button class="number0">0</button>
+                <button class="dot">.</button>
+                <button value="equals" class="enter">=</button>
+                <button value="operator" class="func">/</button>
+            </div>
+    </div>
+    </div>
+</body>
+
+<script>
+    let display = document.querySelector('.display');
+    let displayContent = '';
+    let buttons = document.querySelectorAll('button');
+
+    let operatorCheck = true;
+    let operatorReplace = false;
+    let dotCheck = true;
+    let equalsCheck = true;
+
+
+    buttons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            switch (button.value) {
+                case 'operator':
+                    if (operatorCheck === false && operatorReplace === false) {
+                        displayContent += e.target.textContent;
+                        display.innerHTML = displayContent;
+                        operatorCheck = true;
+                        operatorReplace = true;
+                        equalsCheck = false;
+                        break;
+                    } else if (operatorReplace === true) {
+                        displayContent = displayContent.slice(0, -1);
+                        displayContent += e.target.textContent;
+                        display.innerHTML = displayContent;
+                        equalsCheck = false;
+                        break;
+                    }
+                case 'ac':
+                    displayContent = '';
+                    display.innerHTML = displayContent;
+                    operatorCheck = true;
+                    break;
+                case 'equals':
+                    if (operatorCheck === false && equalsCheck === false) {
+                        displayContent = (new Function('return ' + displayContent.replace('÷', '/').replace('x', '*')))();
+                        display.innerHTML = displayContent;
+                        operatorCheck = false;
+                        equalsCheck = true;
+                        dotCheck === true
+                        break;
+                    } else {
+                        break;
+                    }
+                case 'dot':
+                    if (dotCheck === true) {
+                        displayContent += e.target.textContent;
+                        display.innerHTML = displayContent;
+                        dotCheck = false;
+                        operatorCheck = true;
+                        break;
+                    } else {
+                        break;
+                    }
+                default:
+                    if (equalsCheck === true) {
+                        displayContent = '';
+                        displayContent += e.target.textContent;
+                        display.innerHTML = displayContent;
+                        operatorCheck = false;
+                        operatorReplace = false;
+                        equalsCheck = false;
+                        dotCheck === true
+                        break;
+                    } else {
+                        displayContent += e.target.textContent;
+                        display.innerHTML = displayContent;
+                        operatorCheck = false;
+                        operatorReplace = false;
+                        equalsCheck = false;
+                        dotCheck === true
+                        break;
+                    }
+            }
+        })
+    })
+</script>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다이아몬드</title>
+
+
+</head>
+
+<body>
+    <script>
+        let height = 10;
+
+        for (let i = 0; i < height; i++) { /* height 크기 만큼 루프 */
+            let row = '';
+
+            for (let j = 1; j < height - i; j++) {
+                row += ' '; /* 10줄 기준 1행=9... 이렇게 공백 1개씩 줄인다 */
+            }
+            
+            for (let j = 0; j < i * 2 + 1; j++) { /* 별이 1,3,5,7,9 로 2개씩 홀수개로 증가 */
+                row += '*';
+            }
+            console.log(row); /* 역피라미드는 반대로! */
+        }
+    </script>
+
+</body>
+
+</html>

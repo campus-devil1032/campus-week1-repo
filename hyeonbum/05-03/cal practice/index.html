@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+   <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+            <div class="box"; >
+            <table>
+                <thead>
+                    <tr bgcolor="gray" align ="center">
+                        <th td colspan = "5" span style="color:white">계산기</th>
+                    </tr>
+                    
+                    <tr align ="center">
+                        <td align = "center" bgcolor="skyblue">RESULT</td>
+                        <td colspan = "6"><input class="display" type="text" readonly></td>
+                    </tr>
+                    <tr>
+                         <td colspan = "5" span align = "center"><h2 id="result"></h2></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button id="7" onclick="input('7')">7</button></td>
+                        <td><button id="8"onclick="input('8')">8</button></td>
+                        <td><button id="9" onclick="input('9')">9</button></td>
+                        <td><button id="div" onclick="input('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="4" onclick="input('4')">4</button></td>
+                        <td><button id="5" onclick="input('5')">5</button></td>
+                        <td><button id="6" onclick="input('6')">6</button></td>
+                        <td><button id="mul" onclick="input('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="1" onclick="input('1')">1</button></td>
+                        <td><button id="2" onclick="input('2')">2</button></td>
+                        <td><button id="3" onclick="input('3')">3</button></td>
+                        <td><button id="sub" onclick="input('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id="0" onclick="input('0')">0</button></td>
+                        <td><button id="eq" > = </button></td>
+                        <td><button onClick="window.location.reload();input('=')">Reset</button></td>
+                        <td><button id="sum" onclick="input('+')">+</button><br></td>
+                    </tr>
+                </tbody>
+            </div>
+
+            
+
+    <script src="script.js"></script>
+
+</body>
+</html>

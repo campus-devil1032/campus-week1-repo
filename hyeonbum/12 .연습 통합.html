@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>연습</title>
+	<style>
+
+	  .gallery {
+       	 display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+      .gallery img {
+         width: 200px;
+         height: 200px;
+         object-fit: cover;
+         margin-bottom: 20px;
+      }
+      nav {
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+      }
+      nav a {
+        color: #fff;
+        margin-right: 10px;
+        text-decoration: none;
+      }
+      
+    </style>
+</head>
+<body>
+	<h1>1. 네비게이션바</h1>
+ 	<nav>
+      <div>
+        <a href="#">로고</a>
+      </div>
+      <div>
+        <a href="#">메뉴 1</a>
+        <a href="#">메뉴 2</a>
+        <a href="#">메뉴 3</a>
+      </div>
+    </nav>
+
+    <h1>2. 단락</h1>
+    <p>첫 번째 단락</p>
+    <br/>
+    <br/>
+    <br/>
+    <p><strong>두 번째</strong> 단락</p>
+
+    <h1>3. 목록</h1>
+    <ul>
+    	<li>항목 1
+    	<li>항목 2
+    	<li>항목 3
+    </ul>
+
+    <h1>4. 링크</h1>
+    <p><a href="http://www.naver.com">이것은 네이버로 이동합니다.</a> 이 문구는 링크가 아닙니다.</p>
+
+    <h1>5. 이미지</h1>
+    <h2>이미지1</h2><img src="https://cdn.pixabay.com/photo/2020/03/03/08/19/trash-4897847_1280.jpg" width="100px" height="100">
+    <h2>이미지2</h2><img src="https://cdn.pixabay.com/photo/2020/03/03/08/19/trash-4897847_1280.jpg" width="100px" height="100">
+    <h2>이미지3</h2><img src="https://cdn.pixabay.com/photo/2020/03/03/08/19/trash-4897847_1280.jpg" width="100px" height="100">
+    <h2>이미지4</h2><img src="https://cdn.pixabay.com/photo/2020/03/03/08/19/trash-4897847_1280.jpg" width="100px" height="100">
+
+    <h1>6. 테이블</h1>
+    <table border="1">
+    	<thead>
+    		<tr bgcolor="blue" align ="center">
+			<p><td colspan = "5" span style="color:white">학적 관리</td></p>
+    </tr>
+    		<tr>
+    			<th>학교</th>
+    			<th>이름</th>
+    			<th>국어</th>
+    			<th>영어</th>
+    			<th>수학</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    			<td rowspan="4" align = "center" bgcolor="skyblue">부산대학교</td>
+    			<tr>
+    				<td>이창선</td>
+    				<td>80</td>
+    				<td>70</td>
+    				<td>88</td>
+    			</tr>
+    			<tr>
+    				<td>김선식</td>
+    				<td>80</td>
+    				<td>70</td>
+    				<td>88</td>
+    			</tr>
+    			<tr>
+    				<td>이문식</td>
+    				<td>80</td>
+    				<td>70</td>
+    				<td>88</td>
+    			</tr>
+    	</tbody>
+    </table>
+
+    <h1>7. 폼</h1>
+    <form>
+    	<label for="name">이름:</label>
+    	<input type="text" id="name" name="name"><br><br>
+    	<label for="email">이메일</label>
+    	<input for="email" id="email" name="email"><br><br>
+    	<label for="password">비밀번호:</label>
+    	<input type="password" id="password" name="password"><br><br>
+    	<input type="submit" value="제출">
+    </form>
+
+    <h1>8. 오디오</h1>
+    <audio controls>
+    	<source src="https://www.example.com/audio/example.mp3" type="audio/mpeg">
+    	<source src="https://www.example.com/audio/example.mp3" type="audio/mpeg">
+		이 브라우저는 HTML5 오디오를 지원하지 않습니다.
+    </audio>
+
+    <h1>9. 인용문</h1>
+    <blockquote>
+      “훌륭한 계획이란 결코 실수를 범하지 않는 계획이 아니라,
+      실수를 하더라도 적극적으로 대처할 수 있는 계획이다.”</p>
+      ………………
+      <cite>빌 글로리</cite>
+    </blockquote>
+
+    <h1>10. 프레임</h1>
+    <iframe src="https://www.example.com" width="600" height="400"></iframe>
+
+    <h1>11. 이미지 갤러리</h1>
+    	<div class="gallery">
+        	<img src="https://via.placeholder.com/300x300" alt="플레이스홀더입니다!">
+        	<img src="https://via.placeholder.com/300x300" alt="플레이스홀더입니다!">
+       	 	<img src="https://via.placeholder.com/300x300" alt="플레이스홀더입니다!">
+       		<img src="https://via.placeholder.com/300x300" alt="플레이스홀더입니다!">
+        	<img src="https://via.placeholder.com/300x300" alt="플레이스홀더입니다!">
+        	<img src="https://via.placeholder.com/300x300" alt="플레이스홀더입니다!">
+        	<img src="https://via.placeholder.com/300x300" alt="플레이스홀더입니다!">
+    	</div>
+
+
+</body>
+</html>

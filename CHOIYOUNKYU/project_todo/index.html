@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang = 'ko-KR'>
+    <head>
+        <title> 언제까지 이렇게 살래 </title>
+        <!--  할 일 목록 (To-do List) 앱
+        1. 사용자가 입력한 할 일 목록을 추가 / 입력창과 등록 버튼, 할 일 리스트가 뜨는 곳
+        2. 삭제할 수 있는 기능 / 삭제 버튼, 삭제 후 리스트 사라지기
+        3. 완료된 할 일을 체크하는 기능 / 체크 박스 및 체크 시 삭선, 회색 글씨
+        4. LocalStorage를 이용해 할 일 목록 데이터를 저장하고 불러오는 기능 / 저장 버튼, 불러오기 버튼 -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="background">
+            <header> TODO LIST </header>
+            <div class="input_space">
+            <input type="text" id="textbox" placeholder="할 일을 하자"  autofocus/>
+            <button type="button" id="add_button" onclick="add_Todo()"> 등록을 해</button>
+        </div>
+        <div>
+            <div>
+                    <ul> 
+                        <li><div id="todo"></div></il>
+                    </ul> 
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>

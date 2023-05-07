@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Seoyoon's To Do List</title>
+
+    <Style>
+        header {
+            font-size: 30px;
+            color: white;
+            background-color: rgb(231, 215, 193);
+            margin-top: 150px;
+            width: 300px;
+        }
+
+        p {
+            color: rgb(29, 24, 22);
+            font-weight: bold;
+        }
+    </Style>
+</head>
+
+<body>
+    <center>
+        <div>
+            <header>To Do List</header>
+            <hr>
+            <p>해야 할 일을 입력해 주세요</p>
+            <button type="button" id = "btn" onclick="addTodo()"style="cursor:pointer"><i class="xi-plus xi-2x"></i>+
+            </button>&nbsp<input id="addValue" type="text" size="35" placeholder="일정 등록" autofocus>
+        </div>
+        <div>
+            <ul id="addTodo" class="Todolist">
+                <li>
+                    <div id="result"></div>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+
+
+</html>
